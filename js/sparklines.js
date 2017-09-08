@@ -106,19 +106,20 @@ function spark(elemId, data, ur) {
         .attr("stroke-width", 0.5)
         .attr("stroke", "red")
         .attr("opacity", "0.4")
-        .attr("stroke-dasharray", 3,3);
+        // .attr("stroke-dasharray", 3,3)
+    ;
 
     var focus = svg.append("g")
         .attr("class", "focus")
         .style("display", "none");
 
     focus.append("circle")
-        .attr("r", 1.5);
+        .attr("r", 3);
 
     focus.append("text")
         .attr("x", 9)
         .attr("dy", ".35em")
-        .style("font-size", "0.7em");
+        .style("font-size", "1em");
 
     svg.append("rect")
         .attr("class", "overlay")
@@ -164,9 +165,14 @@ d3.csv(url_c, function (error, data) {
     spark('div#c', data);
 });
 
-var url_d = "data/stations/d.csv";
-d3.csv(url_d, function (error, data) {
-    spark('div#d', data);
+var url_z = "data/stations/z.csv";
+d3.csv(url_z, function (error, data) {
+    spark('div#z', data);
+});
+
+var url_e = "data/stations/e.csv";
+d3.csv(url_e, function (error, data) {
+    spark('div#e', data);
 });
 
 var url_f = "data/stations/f.csv";

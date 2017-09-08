@@ -27,7 +27,7 @@ d3.csv(file, function(error, data) {
     var titles = d3.keys(data[0]);
     var headers = table.append('thead').append('tr')
         .selectAll('th')
-        .data(["Назва", "Загруз", "Динаміка"]).enter()
+        .data(["Назва", "Завантаженість", "Динаміка роботи станції"]).enter()
         .append('th')
         .text(function (d) {
             return d;
@@ -51,7 +51,8 @@ d3.csv(file, function(error, data) {
         .append('td')
         .append('div')
         .attr('id', function (d) {
-            return d.value;
+            if (d.value.length < 2 && d.value !== 0)
+            {return d.value}
         })
         .text(function (d) {
             return d.name == "id" ? "" : d.value;
