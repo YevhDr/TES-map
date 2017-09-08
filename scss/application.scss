@@ -1,0 +1,88 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "components/header";
+@import "components/footer";
+@import "components/weirdo";
+
+
+#map {
+  margin-top: 50px;
+  height: 200px;
+  width: 90%;
+
+}
+
+
+.sparkline {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.5px;
+}
+
+
+table {
+  margin-top: 50px;
+  margin-left: 10px;
+  border-collapse: collapse;
+  text-align: left;
+  /*border-spacing: 50px 0;*/
+}
+
+thead {
+  background-color: #f5f5f5;
+
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5
+}
+
+.focus circle {
+  fill: black;
+  opacity: 0.7;
+  stroke: none;
+}
+
+
+tbody {
+  font-weight: normal;
+}
+
+td {
+  padding: 10px 0;
+}
+
+.line {
+  fill: none;
+  stroke: red;
+  stroke-width: 1px;
+}
+
+.line.above {
+  fill: none;
+  stroke: grey;
+  stroke-width: 1px;
+}
+
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.numeral {
+  color:red;
+  font-size:1.3em;
+  font-weight: bold;
+
+}
+
+.sparkcircle {
+  fill: #f00;
+  stroke: none;
+}
