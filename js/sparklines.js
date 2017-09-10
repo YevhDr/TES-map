@@ -64,7 +64,6 @@ function spark(elemId, data) {
          ;
 
 
-
     var letter = elemId.split("#").pop();
 
     var test = "below" + letter;
