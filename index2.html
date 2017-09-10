@@ -1,63 +1,539 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link
-            rel="stylesheet"
-            href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"
-    />
-    <script
-            src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js">
-    </script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css"
-          integrity="sha512-wcw6ts8Anuw10Mzh9Ytw4pylW8+NAD4ch3lqm9lzAsTxg0GFeJgoAtxuCLREZSC5lUXdVyo/7yfsqFjQ4S+aKw=="
-          crossorigin=""/>
-
-    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"
-            integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA=="
-            crossorigin=""></script>
-
-    <script src="js/bootstrap.min.js"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
     <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script type="text/javascript" src="js/leaf-demo.js"></script>
-    <script src="data/data.csv"></script>
-    <script src="data/markers.json"></script>
-
-    <link rel="stylesheet" href="css/application.css"/>
-
-
-
 </head>
+<style>
+
+    body {
+        display: flex;
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
 
+
+    .sparkline {
+        fill: none;
+        stroke: #000;
+        stroke-width: 0.5px;
+    }
+
+
+    table {
+        margin-top: 50px;
+        margin-left: 10px;
+        border-collapse: collapse;
+        text-align: left;
+        /*border-spacing: 50px 0;*/
+    }
+
+    thead {
+        background-color: #f5f5f5;
+
+    }
+
+    th, td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5
+    }
+
+    .focus circle {
+        fill: black;
+        opacity: 0.7;
+        stroke: none;
+    }
+
+
+    tbody {
+        font-weight: normal;
+    }
+
+    td {
+        padding: 10px 0;
+    }
+
+    .line {
+        fill: none;
+        stroke: red;
+        stroke-width: 1px;
+    }
+
+    .line.above1, .line.above2, .line.above3 {
+        fill: none;
+        stroke: grey;
+        stroke-width: 1px;
+    }
+
+    .line.below1, .line.below2, .line.below3 {
+        fill: none;
+        stroke: red;
+        stroke-width: 1px;
+    }
+
+
+    .overlay {
+        fill: none;
+        pointer-events: all;
+    }
+
+    .numeral {
+        color:red;
+        font-size:1.3em;
+        font-weight: bold;
+
+    }
+
+    .sparkcircle {
+        fill: #f00;
+        stroke: none;
+    }
+
+</style>
 <body>
 
-<div class="container">
-
-    <div class="rows">
-
-        <div class="col-xs-6">
-            <div id="map"></div>
-        </div>
-
-        <div class="col-xs-8">
-            <div id="table"></div>
-        </div>
-
-    </div>
-</div>
+<div class="z"></div>
+<div class="w"></div>
+<div class="t"></div>
+    <script>
 
 
+    var xAxis = d3.svg.axis().scale(x)
+        .orient("bottom").ticks(9);
+
+    var width = 300;
+    var height = 100;
+
+    var x = d3.scale
+        .linear()
+        .range([0, width]);
+
+    var y = d3.scale
+        .linear()
+        .range([height, 0]);
+
+var url_v = "data/stations/v.csv";
+
+d3.csv(url_v, function (error, data) {
+
+    var min = data[0].min;
+
+
+    var parseDate = d3.time.format("%Y-%m-%d").parse;
+    bisectDate = d3.bisector(function (d) {
+        return d.date;
+    }).left,
+        formatValue = d3.format(",.2f"),
+        formatCurrency = function (d) {
+            return formatValue(d);
+        };
+
+    data.forEach(function (d) {
+        d.date = parseDate(d.date);
+        d.reserve = +d.reserve;
+
+    });
+    function sortByDateAscending(a, b) {
+// Dates will be cast to numbers automagically:
+        return a.date - b.date;
+    }
+
+    data = data.sort(sortByDateAscending);
+
+
+
+    var line = d3.svg.line()
+        .interpolate("basis")
+        .x(function (d) {
+            return x(d.date);
+        })
+        .y(function (d) {
+            return y(d.reserve);
+        });
+
+    x.domain(d3.extent(data, function (d) {
+        return d.date;
+    }));
+    y.domain([0, d3.max(data, function (d) {
+        return d.reserve;
+    })]);
+
+
+
+    var svg = d3.select("div.t")
+            .append('svg')
+            .attr('width', width)
+            .attr('height', height)
+            .style("overflow", "visible");
+
+
+
+    svg.append("clipPath")
+        .attr("id", "clip-below1")
+        .append("rect")
+        .attr("y", y(min))
+        .attr("width", width)
+        .attr("height", height - y(min));
+
+    svg.append("clipPath")
+        .attr("id", "clip-above1")
+        .append("rect")
+        .attr("width", width)
+        .attr("height", y(min));
+
+
+// svg.append('circle')
+//     .attr('class', 'sparkcircle')
+//     .attr('cx', x(data.date))
+//     .attr('cy', y(data.close))
+//     .attr('r', 1.5);
+
+    svg.selectAll(".line")
+        .data(["below1", "above1"])
+        .enter().append("path")
+        .attr("class", function (d) {
+            return "line " + d;
+        })
+        .attr("clip-path", function (d) {
+            return "url(#clip-" + d + ")";
+        })
+        .datum(data)
+        .attr("d", line);
+
+
+    svg.append("line")
+        .attr("x1", 0)
+        .attr("y1", y(min))
+        .attr("x2", width)
+        .attr("y2", y(min))
+        .attr("stroke-width", 1)
+        .attr("stroke", "red")
+        .attr("opacity", "0.4");
+
+    var focus = svg.append("g")
+        .attr("class", "focus")
+        .style("display", "none");
+
+    focus.append("circle")
+        .attr("r", 3);
+
+    focus.append("text")
+        .attr("x", 9)
+        .attr("dy", ".35em")
+        .style("font-size", "0.6em");
+
+    svg.append("rect")
+        .attr("class", "overlay")
+        .attr("width", width)
+        .attr("height", height)
+        .on("mouseover", function () {
+            focus.style("display", null);
+        })
+        .on("mouseout", function () {
+            focus.style("display", "none");
+        })
+        .on("mousemove", mousemove);
+
+    function mousemove() {
+        var x0 = x.invert(d3.mouse(this)[0]),
+            i = bisectDate(data, x0, 1),
+            d0 = data[i - 1],
+            d1 = data[i],
+            d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+        focus.attr("transform", "translate(" + x(d.date) + "," + y(d.reserve) + ")");
+        focus.select("text").text(formatCurrency(d.reserve));
+    }
+});
+
+//////////////////////////////////////////////////
+//////////////   N E X T  ////////////////////////
+//////////////////////////////////////////////////
+
+
+    var url_g = "data/stations/g.csv";
+
+    d3.csv(url_g, function (error, data) {
+
+        var min = data[0].min;
+
+        var parseDate = d3.time.format("%Y-%m-%d").parse;
+        bisectDate = d3.bisector(function (d) {
+            return d.date;
+        }).left,
+            formatValue = d3.format(",.2f"),
+            formatCurrency = function (d) {
+                return formatValue(d);
+            };
+
+        data.forEach(function (d) {
+            d.date = parseDate(d.date);
+            d.reserve = +d.reserve;
+
+        });
+        function sortByDateAscending(a, b) {
+// Dates will be cast to numbers automagically:
+            return a.date - b.date;
+        }
+
+        data = data.sort(sortByDateAscending);
+
+
+
+        var line = d3.svg.line()
+            .interpolate("basis")
+            .x(function (d) {
+                return x(d.date);
+            })
+            .y(function (d) {
+                return y(d.reserve);
+            });
+
+        x.domain(d3.extent(data, function (d) {
+            return d.date;
+        }));
+        y.domain([0, d3.max(data, function (d) {
+            return d.reserve;
+        })]);
+
+
+
+        var svg = d3.select("div.w")
+            .append('svg')
+            .attr('width', width)
+            .attr('height', height)
+            .style("overflow", "visible");
+
+
+        svg.selectAll(".line")
+            .data(["below2", "above2"])
+            .enter().append("path")
+            .attr("class", function (d) {
+                return "line " + d;
+            })
+            .attr("clip-path", function (d) {
+                return "url(#clip-" + d + ")";
+            })
+            .datum(data)
+            .attr("d", line);
+
+        svg.append("clipPath")
+            .attr("id", "clip-below2")
+            .append("rect")
+            .attr("y", y(min))
+            .attr("width", width)
+            .attr("height", height - y(min));
+
+        svg.append("clipPath")
+            .attr("id", "clip-above2")
+            .append("rect")
+            .attr("width", width)
+            .attr("height", y(min));
+
+
+// svg.append('circle')
+//     .attr('class', 'sparkcircle')
+//     .attr('cx', x(data.date))
+//     .attr('cy', y(data.close))
+//     .attr('r', 1.5);
+
+
+
+
+//        svg.append("line")
+//            .attr("x1", 0)
+//            .attr("y1", y(min))
+//            .attr("x2", width)
+//            .attr("y2", y(min))
+//            .attr("stroke-width", 1)
+//            .attr("stroke", "red")
+//            .attr("opacity", "0.4");
+
+        var focus = svg.append("g")
+            .attr("class", "focus2")
+            .style("display", "none");
+
+        focus.append("circle")
+            .attr("r", 3);
+
+        focus.append("text")
+            .attr("x", 9)
+            .attr("dy", ".35em")
+            .style("font-size", "0.6em");
+
+        svg.append("rect")
+            .attr("class", "overlay")
+            .attr("width", width)
+            .attr("height", height)
+            .on("mouseover", function () {
+                focus.style("display", null);
+            })
+            .on("mouseout", function () {
+                focus.style("display", "none");
+            })
+            .on("mousemove", mousemove);
+
+        function mousemove() {
+            var x0 = x.invert(d3.mouse(this)[0]),
+                i = bisectDate(data, x0, 1),
+                d0 = data[i - 1],
+                d1 = data[i],
+                d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+            focus.attr("transform", "translate(" + x(d.date) + "," + y(d.reserve) + ")");
+            focus.select("text").text(formatCurrency(d.reserve));
+        }
+
+    });
+
+
+    //////////////////////////////////////////////////
+    //////////////   N E X T  ////////////////////////
+    //////////////////////////////////////////////////
+
+
+    var url_m = "data/stations/m.csv";
+
+    d3.csv(url_m, function (error, data) {
+
+        var min = data[0].min;
+
+        var parseDate = d3.time.format("%Y-%m-%d").parse;
+        bisectDate = d3.bisector(function (d) {
+            return d.date;
+        }).left,
+            formatValue = d3.format(",.2f"),
+            formatCurrency = function (d) {
+                return formatValue(d);
+            };
+
+        data.forEach(function (d) {
+            d.date = parseDate(d.date);
+            d.reserve = +d.reserve;
+
+        });
+        function sortByDateAscending(a, b) {
+// Dates will be cast to numbers automagically:
+            return a.date - b.date;
+        }
+
+        data = data.sort(sortByDateAscending);
+
+
+
+        var line = d3.svg.line()
+            .interpolate("basis")
+            .x(function (d) {
+                return x(d.date);
+            })
+            .y(function (d) {
+                return y(d.reserve);
+            });
+
+        x.domain(d3.extent(data, function (d) {
+            return d.date;
+        }));
+        y.domain([0, d3.max(data, function (d) {
+            return d.reserve;
+        })]);
+
+
+
+        var svg = d3.select("div.z")
+            .append('svg')
+            .attr('width', width)
+            .attr('height', height)
+            .style("overflow", "visible");
+
+
+        svg.selectAll(".line")
+            .data(["below3", "above3"])
+            .enter().append("path")
+            .attr("class", function (d) {
+                return "line " + d;
+            })
+            .attr("clip-path", function (d) {
+                return "url(#clip-" + d + ")";
+            })
+            .datum(data)
+            .attr("d", line);
+
+
+        svg.append("clipPath")
+            .attr("id", "clip-below3")
+            .append("rect")
+            .attr("y", y(min))
+            .attr("width", width)
+            .attr("height", height - y(min));
+
+        svg.append("clipPath")
+            .attr("id", "clip-above3")
+            .append("rect")
+            .attr("width", width)
+            .attr("height", y(min));
+
+
+// svg.append('circle')
+//     .attr('class', 'sparkcircle')
+//     .attr('cx', x(data.date))
+//     .attr('cy', y(data.close))
+//     .attr('r', 1.5);
+
+
+
+//        svg.append("line")
+//            .attr("x1", 0)
+//            .attr("y1", y(min))
+//            .attr("x2", width)
+//            .attr("y2", y(min))
+//            .attr("stroke-width", 1)
+//            .attr("stroke", "red")
+//            .attr("opacity", "0.4");
+
+        var focus = svg.append("g")
+            .attr("class", "focus3")
+            .style("display", "none");
+
+        focus.append("circle")
+            .attr("r", 3);
+
+        focus.append("text")
+            .attr("x", 9)
+            .attr("dy", ".35em")
+            .style("font-size", "0.6em");
+
+        svg.append("rect")
+            .attr("class", "overlay")
+            .attr("width", width)
+            .attr("height", height)
+            .on("mouseover", function () {
+                focus.style("display", null);
+            })
+            .on("mouseout", function () {
+                focus.style("display", "none");
+            })
+            .on("mousemove", mousemove);
+
+        function mousemove() {
+            var x0 = x.invert(d3.mouse(this)[0]),
+                i = bisectDate(data, x0, 1),
+                d0 = data[i - 1],
+                d1 = data[i],
+                d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+            focus.attr("transform", "translate(" + x(d.date) + "," + y(d.reserve) + ")");
+            focus.select("text").text(formatCurrency(d.reserve));
+        }
+    })
 
 
 
 
 
 
-<script src="js/table.js"></script>
-<script src="js/sparklines.js"></script>
 
-
-
-</body>
+    </script>
+    </body>
 </html>

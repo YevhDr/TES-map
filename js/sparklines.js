@@ -1,4 +1,4 @@
-function spark(elemId, data, ur) {
+function spark(elemId, data) {
 
 
     var parseDate = d3.time.format("%Y-%m-%d").parse;
@@ -27,8 +27,8 @@ function spark(elemId, data, ur) {
 
     data = data.sort(sortByDateAscending);
 
-     var width = 100;
-     var height = 30;
+     var width = 140;
+     var height = 50;
 
      var x = d3.scale
          .linear()
@@ -63,30 +63,18 @@ function spark(elemId, data, ur) {
          .style("overflow", "visible")
          ;
 
+
+
+    var letter = elemId.split("#").pop();
+
+    var test = "below" + letter;
+    var test2 = "above" + letter;
+
+
     var min = data[0].min;
 
-    svg.append("clipPath")
-        .attr("id", "clip-below")
-        .append("rect")
-        .attr("y", y(min))
-        .attr("width", width)
-        .attr("height", height - y(min));
-
-    svg.append("clipPath")
-        .attr("id", "clip-above")
-        .append("rect")
-        .attr("width", width)
-        .attr("height", y(min));
-
-
-    // svg.append('circle')
-    //     .attr('class', 'sparkcircle')
-    //     .attr('cx', x(data[0].date))
-    //     .attr('cy', y(data[0].close))
-    //     .attr('r', 1.5);
-
     svg.selectAll(".line")
-        .data(["below", "above"])
+        .data([test, test2])
         .enter().append("path")
         .attr("class", function (d) {
             return "line " + d;
@@ -97,14 +85,27 @@ function spark(elemId, data, ur) {
         .datum(data)
         .attr("d", line);
 
+    svg.append("clipPath")
+        .attr("id", "clip-" + test)
+        .append("rect")
+        .attr("y", y(min))
+        .attr("width", width)
+        .attr("height", height - y(min));
+
+    svg.append("clipPath")
+        .attr("id", "clip-" + test2)
+        .append("rect")
+        .attr("width", width)
+        .attr("height", y(min));
+
 
     svg.append("line")
         .attr("x1", 0)
         .attr("y1", y(min))
         .attr("x2", width)
         .attr("y2", y(min))
-        .attr("stroke-width", 0.5)
-        .attr("stroke", "red")
+        .attr("stroke-width", 1)
+        .attr("stroke", "green")
         .attr("opacity", "0.4")
         // .attr("stroke-dasharray", 3,3)
     ;
@@ -119,7 +120,7 @@ function spark(elemId, data, ur) {
     focus.append("text")
         .attr("x", 9)
         .attr("dy", ".35em")
-        .style("font-size", "1em");
+        .style("font-size", "0.6em");
 
     svg.append("rect")
         .attr("class", "overlay")
@@ -153,21 +154,27 @@ function spark(elemId, data, ur) {
  var url_a = "data/stations/a.csv";
  d3.csv(url_a, function (error, data) {
      spark('div#a', data);
+
  });
 
 var url_b = "data/stations/b.csv";
 d3.csv(url_b, function (error, data) {
     spark('div#b', data);
+
 });
+
 
 var url_c = "data/stations/c.csv";
 d3.csv(url_c, function (error, data) {
     spark('div#c', data);
+    data = 0
 });
+
 
 var url_z = "data/stations/z.csv";
 d3.csv(url_z, function (error, data) {
     spark('div#z', data);
+    data = 0
 });
 
 var url_e = "data/stations/e.csv";
@@ -175,10 +182,11 @@ d3.csv(url_e, function (error, data) {
     spark('div#e', data);
 });
 
-var url_f = "data/stations/f.csv";
-d3.csv(url_f, function (error, data) {
-    spark('div#f', data);
+var url_v = "data/stations/v.csv";
+d3.csv(url_v, function (error, data) {
+    spark('div#v', data);
 });
+
 
 var url_g = "data/stations/g.csv";
 d3.csv(url_g, function (error, data) {
@@ -215,10 +223,10 @@ d3.csv(url_n, function (error, data) {
     spark('div#n', data);
 });
 
-// var url_o = "data/stations/o.csv";
-// d3.csv(url_o, function (error, data) {
-//     spark('div#o', data);
-// });
+var url_o = "data/stations/o.csv";
+d3.csv(url_o, function (error, data) {
+    spark('div#o', data);
+});
 
 var url_p = "data/stations/p.csv";
 d3.csv(url_p, function (error, data) {
