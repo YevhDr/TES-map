@@ -10,11 +10,14 @@ function spark(elemId, data) {
             return formatValue(d);
         };
 
-     data.forEach(function (d) {
-         d.date = parseDate(d.date);
-         d.reserve = +d.reserve;
+    data.forEach(function (d) {
+        d.date = parseDate(d.date);
+        d.reserve = +d.reserve;
 
-     });
+    });
+
+
+
 
     var xAxis = d3.svg.axis().scale(x)
         .orient("bottom").ticks(9);
@@ -28,7 +31,7 @@ function spark(elemId, data) {
     data = data.sort(sortByDateAscending);
 
      var width = 140;
-     var height = 50;
+     var height = 20;
 
      var x = d3.scale
          .linear()
@@ -63,14 +66,30 @@ function spark(elemId, data) {
          .style("overflow", "visible")
          ;
 
+    svg.append("text")
+        .data(data)
+        .attr("transform", "translate(" + (width+3) + "," + y(data[0].reserve) + ")")
+        .attr("dy", ".10em")
+        .attr("text-anchor", "start")
+        .style("fill", "grey")
+        .text(function (d) {return d.coal })
+        .style("font-size", "0.6em");
+
+
+
 
     var letter = elemId.split("#").pop();
+
+
+
 
     var test = "below" + letter;
     var test2 = "above" + letter;
 
 
     var min = data[0].min;
+
+
 
     svg.selectAll(".line")
         .data([test, test2])
@@ -98,16 +117,19 @@ function spark(elemId, data) {
         .attr("height", y(min));
 
 
-    svg.append("line")
-        .attr("x1", 0)
-        .attr("y1", y(min))
-        .attr("x2", width)
-        .attr("y2", y(min))
-        .attr("stroke-width", 1)
-        .attr("stroke", "green")
-        .attr("opacity", "0.4")
-        // .attr("stroke-dasharray", 3,3)
-    ;
+
+
+
+    // svg.append("line")
+    //     .attr("x1", 0)
+    //     .attr("y1", y(min))
+    //     .attr("x2", width)
+    //     .attr("y2", y(min))
+    //     .attr("stroke-width", 1)
+    //     .attr("stroke", "green")
+    //     .attr("opacity", "0.4")
+    //     // .attr("stroke-dasharray", 3,3)
+    // ;
 
     var focus = svg.append("g")
         .attr("class", "focus")
@@ -166,14 +188,13 @@ d3.csv(url_b, function (error, data) {
 var url_c = "data/stations/c.csv";
 d3.csv(url_c, function (error, data) {
     spark('div#c', data);
-    data = 0
 });
 
 
 var url_z = "data/stations/z.csv";
 d3.csv(url_z, function (error, data) {
     spark('div#z', data);
-    data = 0
+
 });
 
 var url_e = "data/stations/e.csv";
@@ -186,6 +207,10 @@ d3.csv(url_v, function (error, data) {
     spark('div#v', data);
 });
 
+var url_v = "data/stations/v.csv";
+d3.csv(url_v, function (error, data) {
+    spark('div#v', data);
+});
 
 var url_g = "data/stations/g.csv";
 d3.csv(url_g, function (error, data) {

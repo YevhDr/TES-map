@@ -15,9 +15,7 @@ d3.csv(file, function(error, data) {
 
     //Sorting by int value
 
-    data.forEach(function(d) { return  d.percent = +d.percent;
-
-    });
+    data.forEach(function(d) { return  d.percent = +d.percent; });
 
     var sortAscending = false;
     var table = d3.select('div#table').append('table').attr("width", x);
@@ -38,9 +36,10 @@ d3.csv(file, function(error, data) {
     var rows = table.append('tbody').selectAll('tr')
         .data(data)
         .enter()
-        .append('tr');
+        .append('tr')
+        .attr("onclick", function(d){ return "getStation('" + d.id +"')" });
 
-
+// var letter = data.id;
 
     rows.selectAll('td')
         .data(function (d) {
@@ -49,17 +48,17 @@ d3.csv(file, function(error, data) {
             });
         }).enter()
         .append('td')
+
         .append('div')
         .attr('id', function (d) {
             if (d.value.length < 2 && d.value !== 0)
             {return d.value}
-        })
-        .text(function (d) {
+        }).text(function (d) {
             return d.name == "id" ? "" : d.value;
         });
 
-    table.selectAll("tbody tr")
-        .sort(function(a, b) {
+        table.selectAll("tbody tr")
+         .sort(function(a, b) {
             return d3.descending(a.percent, b.percent);
         });
 
