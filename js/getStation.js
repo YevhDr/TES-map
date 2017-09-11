@@ -27,7 +27,7 @@
             L.marker([47.5086, 34.6256], {icon: greenPoint}).bindTooltip("Запорізька ТЕС", {
                 permanent: true,
                 direction: 'right'
-            }).bindPopup("ла-ла-ла").addTo(map);
+            }).addTo(map);
         }
 
         if(stat === 'g') {
