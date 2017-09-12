@@ -17,7 +17,7 @@ d3.csv(file, function(error, data) {
 
     data.forEach(function(d) { return  d.percent = +d.percent; });
 
-    var sortAscending = false;
+    var sortAscending = true;
     var table = d3.select('div#table').append('table').attr("width", x);
 
 
@@ -25,7 +25,7 @@ d3.csv(file, function(error, data) {
     var titles = d3.keys(data[0]);
     var headers = table.append('thead').append('tr')
         .selectAll('th')
-        .data(["Назва", "Завантаженість", "Динаміка роботи станції"]).enter()
+        .data(["Станція", "Залишок палива, дні", "Динаміка роботи станції"]).enter()
         .append('th')
         .text(function (d) {
             return d;
@@ -59,7 +59,9 @@ d3.csv(file, function(error, data) {
 
         table.selectAll("tbody tr")
          .sort(function(a, b) {
-            return d3.descending(a.percent, b.percent);
+            return d3.ascending(a.percent, b.percent);
         });
 
+    d3.select("div#p").append("text").text('даних немає');
 });
+

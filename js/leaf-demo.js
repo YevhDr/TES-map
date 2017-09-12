@@ -1,12 +1,25 @@
 
-var map = L.map('map') .setView ([49.0, 32.0], 5);
+var cities = L.layerGroup();
 
-L.tileLayer('https://api.mapbox.com/styles/v1/evgeshadrozdova/cj5wmvs1o7k7b2rqnesmnxn4z/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZXZnZXNoYWRyb3pkb3ZhIiwiYSI6ImNqMjZuaGpkYTAwMXAzMm5zdGVvZ2c0OHYifQ.s8MMs2wW15ZyUfDhTS_cdQ', {
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets'
 
-}).addTo(map);
+var mbAttr = "&copy;<a href='http://www.openstreetmap.org/copyright'>mapbox</a>";
+mbUrl = 'https://api.mapbox.com/styles/v1/evgeshadrozdova/cj5wmvs1o7k7b2rqnesmnxn4z/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZXZnZXNoYWRyb3pkb3ZhIiwiYSI6ImNqMjZuaGpkYTAwMXAzMm5zdGVvZ2c0OHYifQ.s8MMs2wW15ZyUfDhTS_cdQ';
+
+var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr});
+
+var map = L.map('map', {
+    center: [49.0, 32.0],
+    zoom: 5,
+    layers: [grayscale, cities]
+});
+
+var baseLayers = {
+    "Grayscale": grayscale
+};
+
+var overlays = {
+    "Cities": cities
+};
 
 
 var jUrl = "data/stations_ids.csv";
