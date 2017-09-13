@@ -8,7 +8,24 @@
 
 
 body {
-  font-size: 1.8em;
+  font-size: 1.5em;
+}
+
+.td{
+  word-wrap:break-word;
+}
+
+
+
+.mobile-text {
+
+  //@media (max-width: 480px) {
+  //  margin-top: 20px;
+  //}
+}
+
+#last {
+  padding-bottom: 20px;
 }
 
 @media (max-width: 480px) {
@@ -24,7 +41,7 @@ body {
   }
 
   #map {
-    max-width: 480px;
+    width: 480px;
     height: 200px;
   }
 
@@ -32,18 +49,17 @@ body {
     padding-top: 20px;
     background-color: white;
     padding-bottom: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 480px;
+    max-width: 100%;
   }
 
   table {
+    font-size: 0.8em;
     overflow: visible;
-    margin-top: 250px;
+    //margin-top: 250px;
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 481px) {
 
   .container {
     position: relative;
@@ -71,9 +87,16 @@ body {
   }
 
   table {
+    max-width:100%;
     overflow: visible;
+    border-spacing: 10px;
     //margin-top: 370px;
   }
+
+  .main {
+    width: 80%;
+  }
+
 }
 
 
@@ -108,9 +131,23 @@ p {
     font-size: 0.8em;
 }
 
+table td:nth-child(3) {
+  width: 50%
+}
+
 th, td {
   border-bottom: 1px solid #ddd;
+  padding: 15px;
 }
+
+table td {
+  text-align: left;
+}
+
+table td:nth-child(2) {
+  text-align: center;
+}​,
+
 
 
 tr:hover {

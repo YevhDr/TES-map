@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   position: relative;
   min-height: 100%; }
@@ -283,7 +284,13 @@ h3 {
       stroke: none; }
 
 body {
-  font-size: 1.8em; }
+  font-size: 1.5em; }
+
+.td {
+  word-wrap: break-word; }
+
+#last {
+  padding-bottom: 20px; }
 
 @media (max-width: 480px) {
   .fixed {
@@ -294,21 +301,19 @@ body {
     float: left; }
 
   #map {
-    max-width: 480px;
+    width: 480px;
     height: 200px; }
 
   .text {
     padding-top: 20px;
     background-color: white;
     padding-bottom: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 480px; }
+    max-width: 100%; }
 
   table {
-    overflow: visible;
-    margin-top: 250px; } }
-@media (min-width: 480px) {
+    font-size: 0.8em;
+    overflow: visible; } }
+@media (min-width: 481px) {
   .container {
     position: relative;
     margin-top: 50px; }
@@ -330,7 +335,12 @@ body {
     max-width: 350px; }
 
   table {
-    overflow: visible; } }
+    max-width: 100%;
+    overflow: visible;
+    border-spacing: 10px; }
+
+  .main {
+    width: 80%; } }
 #v, #x {
   display: flex;
   flex-direction: column;
@@ -353,9 +363,20 @@ thead {
 p {
   font-size: 0.8em; }
 
-th, td {
-  border-bottom: 1px solid #ddd; }
+table td:nth-child(3) {
+  width: 50%; }
 
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px; }
+
+table td {
+  text-align: left; }
+
+table td:nth-child(2) {
+  text-align: center; }
+
+тАЛ,
 tr:hover {
   background-color: #f5f5f5; }
 

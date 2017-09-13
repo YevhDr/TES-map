@@ -28,7 +28,7 @@ function spark(elemId, data) {
 
     data = data.sort(sortByDateAscending);
 
-    var width = 140;
+    var width = 120;
     var height = 20;
 
     var x = d3.scale
@@ -72,7 +72,7 @@ function spark(elemId, data) {
         .text(function (d) {
             return d.coal
         })
-        .style("font-size", "0.6em");
+        .style("font-size", "0.8em");
 
 
     var letter = elemId.split("#").pop();
