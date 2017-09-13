@@ -172,7 +172,6 @@
         if(stat === 'r') {
             d3.select("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.select("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
-            d3.select("div.leaflet-pane.leaflet-tooltip-pane").remove();
             map.setView(new L.LatLng(50.134847,30.745404), 6);
         L.marker([50.134847,30.745404], {icon: greenPoint}).bindTooltip("Трипільська ТЕС", {
             permanent: true,
@@ -234,12 +233,9 @@
             d3.select("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.select("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(50.219662,24.373773), 6);
-            L.marker([50.219662,24.373773], {icon: greenPoint}).bindTooltip("Бурштинська ТЕС", {
+            L.marker([50.219662,24.373773], {icon: greenPoint}).bindTooltip("Добротвірська ТЕС", {
                 permanent: true,
                 direction: 'right'
-            }).bindTooltip("Добротвірська ТЕС", {
-                permanent: true,
-                    direction: 'right'
             }).addTo(cities);
             d3.select("p#temporary").remove();
             d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
