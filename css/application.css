@@ -285,7 +285,7 @@ h3 {
 body {
   font-size: 1.5em; }
 
-.rows {
+.row {
   display: flex;
   justify-content: space-around; }
 
