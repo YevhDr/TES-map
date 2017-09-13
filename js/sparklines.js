@@ -28,7 +28,7 @@ function spark(elemId, data) {
 
     data = data.sort(sortByDateAscending);
 
-    var width = 120;
+    var width = 100;
     var height = 20;
 
     var x = d3.scale

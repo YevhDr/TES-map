@@ -65,7 +65,7 @@
             d3.select("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.select("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.747775,37.573545), 6);
-        L.marker([48.747775,37.573545], {icon: greenPoint}).bindTooltip("Краматорська ТЕС", {
+        L.marker([48.747775,37.573545], {icon: redPoint}).bindTooltip("Краматорська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -125,7 +125,7 @@
             d3.select("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.select("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.403499,35.118088), 6);
-        L.marker([48.403499,35.118088], {icon: greenPoint}).bindTooltip("Придніпровська ТЕС", {
+        L.marker([48.403499,35.118088], {icon: redPoint}).bindTooltip("Придніпровська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -173,7 +173,7 @@
             d3.select("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.select("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(50.134847,30.745404), 6);
-        L.marker([50.134847,30.745404], {icon: greenPoint}).bindTooltip("Трипільська ТЕС", {
+        L.marker([50.134847,30.745404], {icon: redPoint}).bindTooltip("Трипільська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -220,8 +220,8 @@
      if(stat === 'x'|| stat === 'f') {
          d3.select("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
          d3.select("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
-         map.setView(new L.LatLng(49.5865,36.52525), 6);
-         L.marker([49.5865,36.52525], {icon: greenPoint}).bindTooltip("Зміївська ТЕС", {
+         map.setView(new L.LatLng(48.480556,38.289722), 6);
+         L.marker([49.5865,36.52525], {icon: redPoint}).bindTooltip("Миронівська ТЕС", {
              permanent: true,
              direction: 'right'
          }).addTo(cities);

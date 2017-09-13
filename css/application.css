@@ -284,10 +284,27 @@ h3 {
       stroke: none; }
 
 body {
-  font-size: 1.5em; }
+  background-color: #1c2124; }
 
-.td {
-  word-wrap: break-word; }
+.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right {
+  color: white;
+  background-color: #1c2124; }
+
+h1 {
+  color: white;
+  margin-top: 0;
+  font-size: 3.0em;
+  line-height: 1.5em;
+  font-weight: bold;
+  width: 60%; }
+
+h3 {
+  color: white;
+  width: 80%;
+  line-height: 1.5em; }
+
+tbody {
+  color: white; }
 
 #last {
   padding-bottom: 20px; }
@@ -301,7 +318,7 @@ body {
     float: left; }
 
   #map {
-    width: 480px;
+    min-width: 480px;
     height: 200px; }
 
   .text {
@@ -311,8 +328,14 @@ body {
     max-width: 100%; }
 
   table {
-    font-size: 0.8em;
-    overflow: visible; } }
+    color: white;
+    font-size: 1em;
+    width: 95%;
+    margin-right: 5%; }
+
+  td {
+    padding: 5px;
+    word-wrap: break-word; } }
 @media (min-width: 481px) {
   .container {
     position: relative;
@@ -339,6 +362,9 @@ body {
     overflow: visible;
     border-spacing: 10px; }
 
+  td, th {
+    padding: 15px; }
+
   .main {
     width: 80%; } }
 #v, #x {
@@ -348,27 +374,28 @@ body {
 
 .sparkline {
   fill: none;
-  stroke: #000;
-  stroke-width: 0.5px; }
+  stroke: #ffffff;
+  stroke-width: 1px; }
 
 .basicline {
   fill: none;
-  stroke: #000;
-  stroke-width: 0.5px; }
+  stroke: #ffffff;
+  stroke-width: 1px; }
 
 thead {
   align-content: center;
-  font-size: 1em; }
+  font-size: 1.2em;
+  color: white; }
 
 p {
-  font-size: 0.8em; }
+  font-size: 1em;
+  color: white; }
 
 table td:nth-child(3) {
   width: 50%; }
 
 th, td {
-  border-bottom: 1px solid #ddd;
-  padding: 15px; }
+  border-bottom: 1px solid #ddd; }
 
 table td {
   text-align: left; }
@@ -378,7 +405,7 @@ table td:nth-child(2) {
 
 тАЛ,
 tr:hover {
-  background-color: #f5f5f5; }
+  background-color: #6d6e70; }
 
 .focus circle {
   fill: black;
@@ -389,7 +416,7 @@ tbody {
   font-weight: normal; }
 
 td {
-  padding: 10px 0; }
+  padding: 5px 0; }
 
 .line {
   fill: none;
@@ -400,7 +427,7 @@ td {
 .line.abovei, .line.abovej, .line.abovek, .line.abovel, .line.abovem, .line.aboven, .line.abover, .line.aboveq,
 .line.abovep, .line.aboveo, .line.abovet {
   fill: none;
-  stroke: grey;
+  stroke: #ffffff;
   stroke-width: 1px; }
 
 .overlay {
