@@ -65,14 +65,15 @@ function spark(elemId, data) {
 
     svg.append("text")
         .data(data)
-        .attr("transform", "translate(" + (width + 3) + "," + y(data[0].reserve) + ")")
+        .attr("transform", "translate(" + (width + 3) + "," + y(data[data.length-1].reserve) + ")")
         .attr("dy", ".10em")
         .attr("text-anchor", "start")
         .style("fill", "grey")
         .text(function (d) {
             return d.coal
         })
-        .style("font-size", "0.8em");
+        .style("font-size", "0.8em")
+        .style("padding-top", "5px");
 
 
     var letter = elemId.split("#").pop();
@@ -142,7 +143,8 @@ function spark(elemId, data) {
     focus.append("text")
         .attr("x", 9)
         .attr("dy", ".35em")
-        .style("font-size", "0.6em");
+        .style("font-size", "0.8em")
+        .style("fill", "white");
 
     svg.append("rect")
         .attr("class", "overlay")
@@ -163,7 +165,7 @@ function spark(elemId, data) {
             d1 = data[i],
             d = x0 - d0.date > d1.date - x0 ? d1 : d0;
         focus.attr("transform", "translate(" + x(d.date) + "," + y(d.reserve) + ")");
-        focus.select("text").text(formatCurrency(d.reserve));
+        focus.select("text").text(formatCurrency(d.reserve) + " тис.тонн");
     }
 
 
@@ -210,7 +212,7 @@ d3.csv(url_v, function (error, data) {
 
 var url_y = "data/stations/v_g.csv";
 d3.csv(url_y, function (error, data) {
-    spark('div#y', data);
+    spark('div#v', data);
 });
 
 var url_g = "data/stations/g_g.csv";
@@ -286,7 +288,7 @@ d3.csv(url_x, function (error, data) {
 
 var url_f = "data/stations/x_g.csv";
 d3.csv(url_f, function (error, data) {
-    spark('div#f', data);
+    spark('div#x', data);
 });
 
 

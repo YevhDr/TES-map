@@ -286,6 +286,9 @@ h3 {
 body {
   background-color: #1c2124; }
 
+svg {
+  margin-bottom: 5px; }
+
 .leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right {
   color: white;
   background-color: #1c2124; }
@@ -310,12 +313,28 @@ tbody {
   padding-bottom: 20px; }
 
 @media (max-width: 480px) {
+  #temporary {
+    width: 80%;
+    padding-left: 5%; }
+
+  .container {
+    padding-left: 0; }
+
+  h1 {
+    margin-top: 30px;
+    color: white;
+    font-size: 3.0em;
+    line-height: 1.5em;
+    font-weight: bold;
+    width: 90%; }
+
   .fixed {
     position: fixed; }
 
   .scrollit {
     margin-top: 300px;
-    float: left; }
+    float: left;
+    padding: 15px; }
 
   #map {
     min-width: 480px;
@@ -323,9 +342,9 @@ tbody {
 
   .text {
     padding-top: 20px;
-    background-color: white;
-    padding-bottom: 20px;
-    max-width: 100%; }
+    background-color: #1c2124;
+    padding-bottom: 10px;
+    max-width: 80%; }
 
   table {
     color: white;
@@ -333,10 +352,18 @@ tbody {
     width: 95%;
     margin-right: 5%; }
 
-  td {
+  th, td {
     padding: 5px;
     word-wrap: break-word; } }
 @media (min-width: 481px) {
+  h1 {
+    color: white;
+    margin-top: 0;
+    font-size: 3.0em;
+    line-height: 1.5em;
+    font-weight: bold;
+    width: 60%; }
+
   .container {
     position: relative;
     margin-top: 50px; }
@@ -391,6 +418,9 @@ p {
   font-size: 1em;
   color: white; }
 
+p span {
+  color: #6d6e70; }
+
 table td:nth-child(3) {
   width: 50%; }
 
@@ -405,10 +435,10 @@ table td:nth-child(2) {
 
 тАЛ,
 tr:hover {
-  background-color: #6d6e70; }
+  background-color: #3f4042; }
 
 .focus circle {
-  fill: black;
+  fill: red;
   opacity: 0.7;
   stroke: none; }
 

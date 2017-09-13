@@ -10,6 +10,9 @@ body {
   background-color: #1c2124;
 }
 
+svg {
+  margin-bottom: 5px;
+}
 .leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right {
   color: white;
   background-color: #1c2124;
@@ -30,6 +33,8 @@ h3 {
   line-height: 1.5em;
 }
 
+
+
 tbody {
   color:white;
 }
@@ -40,14 +45,35 @@ tbody {
 
 @media (max-width: 480px) {
 
+  #temporary {
+    width: 80%;
+    padding-left: 5%;
+  }
+
+  .container {
+    padding-left: 0;
+  }
+
+  h1 {
+    margin-top: 30px;
+    color: white;
+    font-size: 3.0em;
+    line-height: 1.5em;
+    font-weight: bold;
+    width: 90%;
+  }
+
+
+
   .fixed {
     position: fixed;
-    //width: 25%;
+
   }
 
   .scrollit {
     margin-top: 300px;
     float: left;
+    padding: 15px;
   }
 
   #map {
@@ -57,9 +83,9 @@ tbody {
 
   .text {
     padding-top: 20px;
-    background-color: white;
-    padding-bottom: 20px;
-    max-width: 100%;
+    background-color: #1c2124;
+    padding-bottom: 10px;
+    max-width: 80%;
   }
 
   table {
@@ -70,13 +96,22 @@ tbody {
     //margin-top: 250px;
   }
 
-  td {
+  th, td {
     padding: 5px;
     word-wrap:break-word;
   }
 }
 
 @media (min-width: 481px) {
+
+  h1 {
+    color: white;
+    margin-top: 0;
+    font-size: 3.0em;
+    line-height: 1.5em;
+    font-weight: bold;
+    width: 60%;
+  }
 
   .container {
     position: relative;
@@ -124,7 +159,7 @@ tbody {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
+ }
 
 .sparkline {
   fill: none;
@@ -149,8 +184,12 @@ thead {
 
 
 p {
-    font-size: 1em;
+  font-size: 1em;
   color: white;
+}
+
+p span {
+  color: #6d6e70;
 }
 
 table td:nth-child(3) {
@@ -172,11 +211,11 @@ table td:nth-child(2) {
 
 
 tr:hover {
-  background-color: #6d6e70
+  background-color: #3f4042
 }
 
 .focus circle {
-  fill: black;
+  fill: red;
   opacity: 0.7;
   stroke: none;
 }
