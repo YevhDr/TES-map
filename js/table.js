@@ -6,11 +6,12 @@ d3.csv(file, function(error, data) {
 
 
     //Responsive size
-    var w = window,
-        d = document,
-        e = d.documentElement,
-        g = d.getElementsByTagName('div#table')[0],
-        x = w.innerWidth / 2 || e.clientWidth / 2 || g.clientWidth / 2;
+    // var w = window,
+    //     d = document,
+    //     e = d.documentElement,
+    //     g = d.getElementsByTagName('div#table')[0],
+    //     // x = w.innerWidth / 2 || e.clientWidth / 2 || g.clientWidth / 2
+    //     x = w.innerWidth || e.clientWidth || g.clientWidth;
 
 
     //Sorting by int value
@@ -18,14 +19,16 @@ d3.csv(file, function(error, data) {
     data.forEach(function(d) { return  d.percent = +d.percent; });
 
     var sortAscending = true;
-    var table = d3.select('div#table').append('table').attr("width", x);
+    var table = d3.select('div#table').append('table')
+            // .attr("width", x)
+        ;
 
 
 
     var titles = d3.keys(data[0]);
     var headers = table.append('thead').append('tr')
         .selectAll('th')
-        .data(["Станція", "Залишок палива, дні", "Динаміка роботи станції"]).enter()
+        .data(["Станція", "Залишок палива", "Динаміка роботи станції"]).enter()
         .append('th')
         .text(function (d) {
             return d;
