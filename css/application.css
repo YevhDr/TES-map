@@ -283,18 +283,21 @@ h3 {
       stroke: none; }
 
 body {
-  font-size: 1.5em; }
+  font-size: 1.3em; }
 
-.row {
-  display: flex;
-  justify-content: space-around; }
+.fixed {
+  position: fixed;
+  width: 25%; }
+
+.scrollit {
+  float: left;
+  margin-left: 35%; }
 
 #map {
   margin-top: 50px;
   height: 200px;
   width: 100%;
-  margin-right: 10px;
-  align-items: flex-end; }
+  margin-right: 10px; }
 
 #v, #x {
   display: flex;

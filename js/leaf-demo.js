@@ -9,9 +9,13 @@ var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr});
 
 var map = L.map('map', {
     center: [49.0, 32.0],
+    scrollWheelZoom: false,
     zoom: 5,
     layers: [grayscale, cities]
 });
+
+map.once('focus', function() { map.scrollWheelZoom.enable(); });
+
 
 var baseLayers = {
     "Grayscale": grayscale
