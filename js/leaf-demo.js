@@ -24,31 +24,27 @@ var cities = L.layerGroup();
 ///////////////////////////////////////
 
 
-L.marker([49.207883, 24.666714], {icon: greenPoint}).bindTooltip("Бурштинська ТЕС", {
-    permanent: true,
-    direction: 'right'
-}).addTo(cities);
+ L.marker([49.207883, 24.666714], {icon: greenPoint}).addTo(cities);
+ L.marker([48.463149, 38.202597], {icon: greenPoint}).addTo(cities);
+ L.marker([50.446638, 30.639666], {icon: greenPoint}).addTo(cities);
+ L.marker([47.5086, 34.6256], {icon: greenPoint}).addTo(cities);
+ L.marker([49.071129,24.319353], {icon: greenPoint}).addTo(cities);
+ L.marker([48.747775,37.573545], {icon: redPoint}).addTo(cities);
+ L.marker([47.566448,33.64328], {icon: greenPoint}).addTo(cities);
+ L.marker([47.99459,37.237741], {icon: greenPoint}).addTo(cities);
+ L.marker([48.706825,29.220188], {icon: greenPoint}).addTo(cities);
+ L.marker([48.748741,39.260899], {icon: greenPoint}).addTo(cities);
+ L.marker([48.403499,35.118088], {icon: redPoint}).addTo(cities);
+ L.marker([48.871596,37.764766], {icon: greenPoint}).addTo(cities);
+ L.marker([47.799096,38.004681], {icon: greenPoint}).addTo(cities);
+ L.marker([49.797068,36.590277], {icon: greenPoint}).addTo(cities);
+ L.marker([50.134847,30.745404], {icon: redPoint}).addTo(cities);
+ L.marker([49.386221,32.060906], {icon: greenPoint}).addTo(cities);
+ L.marker([51.455278,31.262222], {icon: greenPoint}).addTo(cities);
+ L.marker([49.5865,36.52525], {icon: greenPoint}).addTo(cities);
+ L.marker([49.5865,36.52525], {icon: redPoint}).addTo(cities);
+ L.marker([50.219662,24.373773], {icon: greenPoint}).addTo(cities);
 
-L.marker([48.463149, 38.202597], {icon: greenPoint}).bindTooltip("Вуглегірська ТЕС", {
-    permanent: true,
-    direction: 'right'
-}).addTo(cities);
-
-L.marker([50.446638, 30.639666], {icon: greenPoint}).bindTooltip("Дарницька ТЕС", {
-    permanent: true,
-    direction: 'right'
-}).addTo(cities);
-
-
-L.marker([47.5086, 34.6256], {icon: greenPoint}).bindTooltip("Запорізька ТЕС", {
-    permanent: true,
-    direction: 'right'
-}).addTo(cities);
-
-L.marker([49.071129,24.319353], {icon: greenPoint}).bindTooltip("Калуська ТЕС", {
-    permanent: true,
-    direction: 'right'
-}).addTo(cities);
 
 ///////////////////////////////////
 ////////////////////////////////

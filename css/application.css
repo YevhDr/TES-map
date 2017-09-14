@@ -284,7 +284,18 @@ h3 {
       stroke: none; }
 
 body {
-  background-color: #1c2124; }
+  background-color: #1c2124;
+  font-family: "PT Sans Caption", sans-serif; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+table {
+  font-size: 1.6em; }
+
+.container {
+  position: fixed;
+  margin-left: 5%; }
 
 svg {
   margin-bottom: 5px;
@@ -294,18 +305,51 @@ svg {
   color: white;
   background-color: #1c2124; }
 
+.text {
+  float: left;
+  max-width: 280px;
+  height: 400px;
+  overflow: auto; }
+
 h1 {
   color: white;
-  margin-top: 0;
-  font-size: 3.0em;
+  margin-bottom: 50px;
+  font-size: 4.2em;
   line-height: 1.5em;
-  font-weight: bold;
-  width: 60%; }
+  font-weight: bold; }
 
 h3 {
   color: white;
-  width: 80%;
+  width: 70%;
+  margin-top: 0;
   line-height: 1.5em; }
+
+p {
+  font-size: 1.5em;
+  color: white;
+  line-height: 1.4em; }
+  @media (max-width: 2570px) {
+    p {
+      font-size: 1.2em; } }
+  @media (max-width: 1440px) {
+    p {
+      font-size: 1.3em; } }
+  @media (max-width: 1285px) {
+    p {
+      font-size: 1.5em; } }
+  @media (max-width: 1024px) {
+    p {
+      font-size: 1.2em; } }
+  @media (max-width: 767px) {
+    p {
+      font-size: 1.2em; } }
+
+.text {
+  font-size: 1.3em;
+  color: white; }
+
+p span {
+  color: #6d6e70; }
 
 tbody {
   color: white; }
@@ -319,23 +363,15 @@ tbody {
     padding-left: 5%; }
 
   .container {
-    padding-left: 0; }
+    padding-left: 0;
+    margin-top: 0;
+    background-color: #1c2124; }
 
   h1 {
     margin-top: 40px;
     color: white;
-    font-size: 3.0em;
     line-height: 1.5em;
-    font-weight: bold;
-    width: 90%; }
-
-  .fixed {
-    position: fixed; }
-
-  .scrollit {
-    margin-top: 300px;
-    float: left;
-    padding: 15px; }
+    font-weight: bold; }
 
   #map {
     min-width: 480px;
@@ -360,22 +396,16 @@ tbody {
   h1 {
     color: white;
     margin-top: 0;
-    font-size: 3.0em;
     line-height: 1.5em;
-    font-weight: bold;
-    width: 60%; }
+    font-weight: bold; }
 
   .container {
+    padding-left: 50px;
+    margin-top: 0;
+    padding-top: 50px;
     position: relative;
-    margin-top: 50px; }
-
-  .fixed {
-    position: fixed;
-    width: 25%; }
-
-  .scrollit {
-    float: left;
-    margin-left: 35%; }
+    background-color: #1c2124;
+    padding-bottom: 50px; }
 
   #map {
     max-width: 350px;
@@ -386,7 +416,7 @@ tbody {
     max-width: 350px; }
 
   table {
-    max-width: 100%;
+    width: 90%;
     overflow: visible;
     border-spacing: 10px; }
 
@@ -394,7 +424,8 @@ tbody {
     padding: 15px; }
 
   .main {
-    width: 80%; } }
+    width: 100%;
+    font-size: 1.3em; } }
 #v, #x {
   display: flex;
   flex-direction: column;
@@ -415,17 +446,6 @@ thead {
   font-size: 1.2em;
   color: white; }
 
-p {
-  font-size: 1em;
-  color: white;
-  line-height: 1.4em; }
-
-p span {
-  color: #6d6e70; }
-
-table td:nth-child(3) {
-  width: 50%; }
-
 th, td {
   border-bottom: 1px solid #ddd; }
 
@@ -435,7 +455,7 @@ table td {
 table td:nth-child(2) {
   text-align: center; }
 
-тАЛ,
+тАЛ
 tr:hover {
   background-color: #3f4042; }
 

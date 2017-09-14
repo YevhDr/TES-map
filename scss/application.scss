@@ -8,6 +8,20 @@
 
 body {
   background-color: #1c2124;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+table {
+  font-size: 1.6em;
+}
+
+.container {
+  position: fixed;
+  margin-left: 5%;
 }
 
 svg {
@@ -19,29 +33,74 @@ svg {
   background-color: #1c2124;
 }
 
+.text {
+  float:left;
+  max-width:280px;
+  height:400px;
+  overflow:auto;
+}
+
   h1 {
     color: white;
-    margin-top: 0;
-    font-size: 3.0em;
+    margin-bottom: 50px;
+    font-size: 4.2em;
     line-height: 1.5em;
     font-weight: bold;
-    width: 60%;
   }
 
 h3 {
-  color: white;
-  width: 80%;
-  line-height: 1.5em;
+    color: white;
+    width: 70%;
+    margin-top: 0;
+    line-height: 1.5em;
 }
 
 
+p {
+  font-size: 1.5em;
+  color: white;
+  line-height: 1.4em;
+
+  @media #{$brk-xlarge}{
+    font-size: 1.2em;
+  }
+
+  @media #{$brk-large}{
+  font-size: 1.3em;
+}
+
+  @media #{$brk-medium}{
+  font-size: 1.5em;
+}
+
+  @media #{$brk-narrow}{
+  font-size: 1.2em;
+}
+
+  @media #{$brk-spnarrow}{
+  font-size: 1.2em;
+}
+    
+  }
+
+
+.text {
+
+  font-size: 1.3em;
+  color: white;
+
+}
+
+p span {
+  color: #6d6e70;
+}
 
 tbody {
-  color:white;
+    color:white;
 }
 
 #last {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 480px) {
@@ -53,28 +112,17 @@ tbody {
 
   .container {
     padding-left: 0;
+    margin-top: 0;
+    background-color: #1c2124;
+
   }
 
   h1 {
     margin-top: 40px;
     color: white;
-    font-size: 3.0em;
     line-height: 1.5em;
     font-weight: bold;
-    width: 90%;
-  }
 
-
-
-  .fixed {
-    position: fixed;
-
-  }
-
-  .scrollit {
-    margin-top: 300px;
-    float: left;
-    padding: 15px;
   }
 
   #map {
@@ -108,25 +156,18 @@ tbody {
   h1 {
     color: white;
     margin-top: 0;
-    font-size: 3.0em;
     line-height: 1.5em;
     font-weight: bold;
-    width: 60%;
+
   }
 
   .container {
+    padding-left: 50px;
+    margin-top: 0;
+    padding-top: 50px;
     position: relative;
-    margin-top: 50px;
-  }
-
-  .fixed {
-    position: fixed;
-    width: 25%;
-  }
-
-  .scrollit {
-    float: left;
-    margin-left: 35%;
+    background-color: #1c2124;
+    padding-bottom: 50px;
   }
 
   #map {
@@ -140,7 +181,7 @@ tbody {
   }
 
   table {
-    max-width:100%;
+    width:90%;
     overflow: visible;
     border-spacing: 10px;
   }
@@ -150,7 +191,8 @@ tbody {
   }
 
   .main {
-    width: 80%;
+    width: 100%;
+    font-size: 1.3em;
   }
 
 }
@@ -184,19 +226,11 @@ thead {
 }
 
 
-p {
-  font-size: 1em;
-  color: white;
-  line-height: 1.4em;
-}
 
-p span {
-  color: #6d6e70;
-}
 
-table td:nth-child(3) {
-  width: 50%
-}
+//table td:nth-child(3) {
+//  width: 50%
+//}
 
 th, td {
   border-bottom: 1px solid #ddd;
@@ -208,9 +242,7 @@ table td {
 
 table td:nth-child(2) {
   text-align: center;
-}​,
-
-
+}​
 
 tr:hover {
   background-color: #3f4042
