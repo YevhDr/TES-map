@@ -4,7 +4,6 @@ d3.csv(file, function(error, data) {
     if (error) throw error;
 
 
-
     //Responsive size
     // var w = window,
     //     d = document,
@@ -14,9 +13,9 @@ d3.csv(file, function(error, data) {
     //     x = w.innerWidth || e.clientWidth || g.clientWidth;
 
 
-    //Sorting by int value
+    data.forEach(function(d) { return  d.plan_percent = +d.plan_percent; });
 
-    data.forEach(function(d) { return  d.percent = +d.percent; });
+
 
     var sortAscending = true;
     var table = d3.select('div#table').append('table')
@@ -28,7 +27,8 @@ d3.csv(file, function(error, data) {
     var titles = d3.keys(data[0]);
     var headers = table.append('thead').append('tr')
         .selectAll('th')
-        .data(["Станція", "Залишок", "Динаміка запасів"]).enter()
+        .data(["Станція", "Залишок", "Виконання плану"]).enter()
+        // .data(titles).enter()
         .append('th')
         .text(function (d) {
             return d;
@@ -37,32 +37,51 @@ d3.csv(file, function(error, data) {
 
 
     var rows = table.append('tbody').selectAll('tr')
-        .data(data)
+        .data(data, function (d) {return d.id})
         .enter()
         .append('tr')
         .attr("onclick", function(d){ return "getStation('" + d.id +"')" });
 
-// var letter = data.id;
+
+    // rows.selectAll('td')
+    //     .data(function(d){return d3.values(d)})
+    //     .enter()
+    //     .append('td')
+    //     .filter(function (d, i) { return i === 0 || i === 1 || i === 2;})
+    //     .text(function (d) {
+    //     return d});
+
+
+    table.selectAll("tbody tr")
+        .sort(function(a, b) {
+            return d3.ascending(a.plan_percent, b.plan_percent);
+        });
+
 
     rows.selectAll('td')
+
         .data(function (d) {
             return titles.map(function (k) {
                 return { 'value': d[k], 'name': k};
             });
-        }).enter()
+        })
+        .enter()
         .append('td')
-
+        .filter(function (d, i) { return i === 0 || i === 1 || i === 2 ;}) //return only 0,1,4 "columns"
         .append('div')
         .attr('id', function (d) {
             if (d.value.length < 2 && d.value !== 0)
             {return d.value}
-        }).text(function (d) {
+        }).html(function (d) {
+
+
             return d.name == "id" ? "" : d.value;
         });
+        // .attr("class", function(d) { return  d.value.search(/[0-9]/) < 0 ? "station" : "remains" });
 
         table.selectAll("tbody tr")
          .sort(function(a, b) {
-            return d3.ascending(a.percent, b.percent);
+            return d3.ascending(a.plan_percent, b.plan_percent);
         });
 
     d3.select("div#p").append("text").text('даних немає');

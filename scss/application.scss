@@ -5,6 +5,26 @@
 @import "components/footer";
 @import "components/weirdo";
 
+.remains {
+  white-space: pre;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none !important;
+    padding-top: 0; }
+
+  .desktop {
+    display: block !important; }
+}
+
+@media only screen and (max-width: 767px) {
+  .mobile {
+    display: block !important; }
+
+  .desktop {
+    display: none !important; }
+}
 
 body {
   background-color: #1c2124;
@@ -19,11 +39,6 @@ table {
   font-size: 1.6em;
 }
 
-.container {
-  position: fixed;
-  margin-left: 5%;
-}
-
 svg {
   margin-bottom: 5px;
   margin-top: 5px;
@@ -33,12 +48,7 @@ svg {
   background-color: #1c2124;
 }
 
-.text {
-  float:left;
-  max-width:280px;
-  height:400px;
-  overflow:auto;
-}
+
 
   h1 {
     color: white;
@@ -81,7 +91,7 @@ p {
   font-size: 1.2em;
 }
     
-  }
+}
 
 
 .text {
@@ -102,6 +112,9 @@ tbody {
 #last {
     padding-bottom: 20px;
 }
+/////////////////////////////////////////
+//////////////////MOBILE/////////////////
+/////////////////////////////////////////
 
 @media (max-width: 480px) {
 
@@ -111,10 +124,8 @@ tbody {
   }
 
   .container {
+    margin-left: 0;
     padding-left: 0;
-    margin-top: 0;
-    background-color: #1c2124;
-
   }
 
   h1 {
@@ -135,6 +146,7 @@ tbody {
     background-color: #1c2124;
     padding-bottom: 10px;
     max-width: 80%;
+    background-color: #1c2124;
   }
 
   table {
@@ -151,6 +163,10 @@ tbody {
   }
 }
 
+/////////////////////////////////////////
+//////////////////SCREEN/////////////////
+/////////////////////////////////////////
+
 @media (min-width: 481px) {
 
   h1 {
@@ -159,6 +175,13 @@ tbody {
     line-height: 1.5em;
     font-weight: bold;
 
+  }
+
+  .text {
+    float:left;
+    max-width:280px;
+    height:400px;
+    overflow:auto;
   }
 
   .container {
@@ -242,7 +265,7 @@ table td {
 
 table td:nth-child(2) {
   text-align: center;
-}​
+}​,
 
 tr:hover {
   background-color: #3f4042
@@ -271,7 +294,7 @@ td {
 
 .line.abovea, .line.aboveb, .line.abovec, .line.abovez, .line.abovee, .line.abovev, .line.aboveg,
 .line.abovei,.line.abovej,.line.abovek, .line.abovel, .line.abovem, .line.aboven, .line.abover, .line.aboveq,
-.line.abovep, .line.aboveo, .line.abovet {
+.line.abovep, .line.aboveo, .line.abovet, .line.abovef, .line.abovey, .line.aboves, .line.abovex {
   fill: none;
   stroke: #ffffff;
   stroke-width: 1px;
