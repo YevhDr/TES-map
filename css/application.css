@@ -3,14 +3,6 @@ html {
   position: relative;
   min-height: 100%; }
 
-body {
-  font-family: Open Sans, sans-serif;
-  font-size: 100%;
-  color: #383e47;
-  width: 100%;
-  /*footer height plus padding*/
-  margin-bottom: 200px; }
-
 a {
   color: inherit;
   text-decoration: none; }
@@ -283,6 +275,18 @@ h3 {
       fill: none;
       stroke: none; }
 
+body {
+  font-family: Open Sans, sans-serif;
+  color: #383e47;
+  width: 100%;
+  margin-bottom: 100px; }
+  @media (min-width: 480px) {
+    body {
+      font-size: 1.6em; } }
+
+#table {
+  margin-right: 5%; }
+
 .remains {
   white-space: pre; }
 
@@ -306,8 +310,10 @@ body {
 ::-webkit-scrollbar {
   display: none; }
 
-table {
-  font-size: 1.6em; }
+img {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 90%; }
 
 svg {
   margin-bottom: 5px;
@@ -319,16 +325,24 @@ svg {
 
 h1 {
   color: white;
-  margin-bottom: 50px;
   font-size: 4.2em;
+  margin-bottom: 50px;
   line-height: 1.5em;
   font-weight: bold; }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 4.2em;
+      margin-left: 5%; } }
 
 h3 {
   color: white;
-  width: 70%;
   margin-top: 0;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  width: 70%; }
+  @media (max-width: 480px) {
+    h3 {
+      margin-left: 5%;
+      width: 90%; } }
 
 p {
   font-size: 1.5em;
@@ -363,10 +377,21 @@ tbody {
 #last {
   padding-bottom: 20px; }
 
+@media (width: 320px) {
+  table {
+    font-size: 1em; } }
 @media (max-width: 480px) {
+  .col-xl-8 .col-md-offset-1 .col-lg-8 .col-md-8 .col-sm-7 {
+    margin-left: 5%;
+    padding-left: 0;
+    float: left;
+    overflow: auto;
+    height: 100vh; }
+
   #temporary {
-    width: 80%;
-    padding-left: 5%; }
+    width: 100%;
+    padding-left: 5%;
+    font-size: 0.8em; }
 
   .container {
     margin-left: 0;
@@ -379,26 +404,36 @@ tbody {
     font-weight: bold; }
 
   #map {
-    min-width: 480px;
+    max-width: 480px;
     height: 200px; }
 
   .text {
     padding-top: 20px;
     background-color: #1c2124;
     padding-bottom: 10px;
-    max-width: 80%;
-    background-color: #1c2124; }
+    max-width: 90%; }
 
   table {
     color: white;
-    font-size: 1em;
-    width: 95%;
+    font-size: 1.2em;
+    width: 70%;
+    margin-left: 5%;
     margin-right: 5%; }
 
   th, td {
     padding: 5px;
     word-wrap: break-word; } }
 @media (min-width: 481px) {
+  body {
+    font-size: 10px; }
+
+  .col-xl-8 .col-md-offset-1 .col-lg-8 .col-md-8 .col-sm-7 {
+    margin-left: 5%;
+    padding-left: 0;
+    float: right;
+    overflow: auto;
+    height: 100vh; }
+
   h1 {
     color: white;
     margin-top: 0;
@@ -410,6 +445,9 @@ tbody {
     max-width: 280px;
     height: 400px;
     overflow: auto; }
+
+  #temporary {
+    font-size: 1em; }
 
   .container {
     padding-left: 50px;
@@ -428,7 +466,10 @@ tbody {
     max-width: 350px; }
 
   table {
-    width: 90%;
+    color: white;
+    font-size: 1.6em;
+    margin-right: 5%;
+    width: 70%;
     overflow: visible;
     border-spacing: 10px; }
 

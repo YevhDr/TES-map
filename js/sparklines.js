@@ -28,7 +28,7 @@ function spark(elemId, data) {
 
     data = data.sort(sortByDateAscending);
 
-    var width = 120;
+    var width = 100;
     var height = 20;
 
     var x = d3.scale
@@ -65,7 +65,7 @@ function spark(elemId, data) {
 
     svg.append("text")
         .data(data)
-        .attr("transform", "translate(" + (width + 3) + "," + y(data[data.length-1].plan_percent) + ")")
+        .attr("transform", "translate(" + (width + 3 ) + "," + y(data[data.length-1].plan_percent) + ")")
         .attr("dy", ".10em")
         .attr("text-anchor", "start")
         .style("fill", "grey")
