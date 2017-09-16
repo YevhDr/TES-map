@@ -48,33 +48,29 @@ body {
   font-family: "PT Sans Caption", sans-serif;
 }
 
-::-webkit-scrollbar {
-  display: none;
+//::-webkit-scrollbar {
+//  display: none;
+//}
+
+
+
+
+
+::-webkit-scrollbar
+{
+  width: 5px;  /* for vertical scrollbars */
+  height: 5px; /* for horizontal scrollbars */
 }
 
-img {
-  margin-bottom: 15px;
-  margin-top: 15px;
-  width: 90%;
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
 }
 
-
-
-//::-webkit-scrollbar
-//{
-//  width: 5px;  /* for vertical scrollbars */
-//  height: 5px; /* for horizontal scrollbars */
-//}
-//
-//::-webkit-scrollbar-track
-//{
-//  background: rgba(0, 0, 0, 0.1);
-//}
-//
-//::-webkit-scrollbar-thumb
-//{
-//  background: rgba(0, 0, 0, 0.2);
-//}
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.2);
+}
 
 
 
@@ -158,6 +154,12 @@ tbody {
 //////////////////MOBILE/////////////////
 /////////////////////////////////////////
 
+img {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 90%;
+}
+
 @media (width: 320px) {
 
   table {
@@ -215,6 +217,12 @@ tbody {
     //margin-top: 250px;
   }
 
+  #table {
+    overflow: auto;
+    float:left;
+    height: 500px;
+  }
+
   th, td {
     padding: 5px;
     word-wrap:break-word; }
@@ -226,8 +234,15 @@ tbody {
 
 @media (min-width: 481px) {
 
+
   body {
     font-size: 10px;
+  }
+
+  img {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 68%;
   }
 
   .col-xl-8 .col-md-offset-1 .col-lg-8 .col-md-8 .col-sm-7 {
