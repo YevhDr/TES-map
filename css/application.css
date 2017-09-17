@@ -275,6 +275,9 @@ h3 {
       fill: none;
       stroke: none; }
 
+.text {
+  overflow: -moz-scrollbars-none; }
+
 body {
   font-family: Open Sans, sans-serif;
   color: #383e47;
@@ -308,7 +311,7 @@ body {
   font-family: "PT Sans Caption", sans-serif; }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
   /* for vertical scrollbars */
   height: 5px;
   /* for horizontal scrollbars */ }
@@ -326,6 +329,44 @@ svg {
 .leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right {
   color: white;
   background-color: #1c2124; }
+
+@media (max-width: 1024px) {
+  img {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 95%; } }
+@media (max-width: 400px) {
+  img {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 85%; } }
+@media (min-width: 800px) {
+  img {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 72%; } }
+
+.click {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  @media (max-width: 400px) {
+    .click {
+      margin-left: 5%;
+      margin-right: 5%;
+      text-align: right;
+      width: 90%; } }
+  @media (max-width: 767px) {
+    .click {
+      margin-left: 5%;
+      margin-right: 5%;
+      text-align: right;
+      width: 90%; } }
+  @media (min-width: 800px) {
+    .click {
+      margin-left: 5%;
+      margin-right: 5%;
+      text-align: right;
+      width: 67%; } }
 
 h1 {
   color: white;
@@ -381,14 +422,10 @@ tbody {
 #last {
   padding-bottom: 20px; }
 
-img {
-  margin-bottom: 15px;
-  margin-top: 15px;
-  width: 90%; }
-
 @media (width: 320px) {
   table {
-    font-size: 1em; } }
+    font-size: 1em;
+    margin-bottom: 15px; } }
 @media (max-width: 480px) {
   .col-xl-8 .col-md-offset-1 .col-lg-8 .col-md-8 .col-sm-7 {
     margin-left: 5%;
@@ -424,15 +461,11 @@ img {
 
   table {
     color: white;
-    font-size: 1.2em;
-    width: 70%;
+    font-size: 1.1em;
+    width: 60%;
     margin-left: 5%;
-    margin-right: 5%; }
-
-  #table {
-    overflow: auto;
-    float: left;
-    height: 500px; }
+    margin-right: 5%;
+    margin-bottom: 15px; }
 
   th, td {
     padding: 5px;
@@ -440,11 +473,6 @@ img {
 @media (min-width: 481px) {
   body {
     font-size: 10px; }
-
-  img {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    width: 68%; }
 
   .col-xl-8 .col-md-offset-1 .col-lg-8 .col-md-8 .col-sm-7 {
     margin-left: 5%;
@@ -459,12 +487,6 @@ img {
     line-height: 1.5em;
     font-weight: bold; }
 
-  .text {
-    float: left;
-    max-width: 280px;
-    height: 400px;
-    overflow: auto; }
-
   #temporary {
     font-size: 1em; }
 
@@ -477,19 +499,18 @@ img {
     padding-bottom: 50px; }
 
   #map {
-    max-width: 350px;
-    height: 200px; }
+    max-width: 300px;
+    height: 200px;
+    margin-bottom: 15px; }
 
   .text {
-    padding-top: 20px;
     max-width: 350px; }
 
   table {
     color: white;
     font-size: 1.6em;
     margin-right: 5%;
-    width: 70%;
-    overflow: visible;
+    width: 75%;
     border-spacing: 10px; }
 
   td, th {

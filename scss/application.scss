@@ -5,6 +5,13 @@
 @import "components/footer";
 @import "components/weirdo";
 
+.text { overflow: -moz-scrollbars-none; }
+
+//.sticker {
+//  position: sticky;
+//  position: -webkit-sticky;
+//  top: 0;
+//}
 
 body {
   font-family: $main-serif;
@@ -58,7 +65,7 @@ body {
 
 ::-webkit-scrollbar
 {
-  width: 5px;  /* for vertical scrollbars */
+  width: 7px;  /* for vertical scrollbars */
   height: 5px; /* for horizontal scrollbars */
 }
 
@@ -83,7 +90,51 @@ svg {
   background-color: #1c2124;
 }
 
+img {
+  @media #{$brk-narrow} {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 95%; }
 
+  @media #{$brk-iphone} {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 85%; }
+
+  @media(min-width: 800px) {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 72%;
+  }
+}
+
+.click {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media #{$brk-iphone} {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: right;
+    width: 90%;
+  }
+
+
+
+  @media #{$brk-spnarrow} {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: right;
+    width: 90%;
+  }
+
+  @media (min-width: 800px) {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: right;
+    width: 67%;
+  }
+ }
 
   h1 {
     color: white;
@@ -91,6 +142,7 @@ svg {
     margin-bottom: 50px;
     line-height: 1.5em;
     font-weight: bold;
+
 
     @media(max-width: 480px) {
       font-size: 4.2em;
@@ -106,6 +158,8 @@ h3 {
   @media(max-width: 480px) {
     margin-left: 5%;
     width: 90%;  }
+
+
 }
 
 
@@ -154,20 +208,20 @@ tbody {
 //////////////////MOBILE/////////////////
 /////////////////////////////////////////
 
-img {
-  margin-bottom: 15px;
-  margin-top: 15px;
-  width: 90%;
-}
-
 @media (width: 320px) {
 
   table {
     font-size: 1em;
+    margin-bottom: 15px;
   }
 }
 
 @media (max-width: 480px) {
+
+
+
+
+
 
   .col-xl-8 .col-md-offset-1 .col-lg-8 .col-md-8 .col-sm-7 {
     margin-left: 5%;
@@ -210,23 +264,25 @@ img {
 
   table {
     color: white;
-    font-size: 1.2em;
-    width: 70%;
+    font-size: 1.1em;
+    width: 60%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 15px;
     //margin-top: 250px;
   }
 
-  #table {
-    overflow: auto;
-    float:left;
-    height: 500px;
-  }
+  //#table {
+  //  overflow: auto;
+  //  float:left;
+  //  height: 500px;
+  //}
 
   th, td {
     padding: 5px;
     word-wrap:break-word; }
 }
+
 
 /////////////////////////////////////////
 //////////////////SCREEN/////////////////
@@ -235,15 +291,12 @@ img {
 @media (min-width: 481px) {
 
 
+
   body {
     font-size: 10px;
   }
 
-  img {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    width: 68%;
-  }
+
 
   .col-xl-8 .col-md-offset-1 .col-lg-8 .col-md-8 .col-sm-7 {
     margin-left: 5%;
@@ -262,10 +315,11 @@ img {
   }
 
   .text {
-    float:left;
-    max-width:280px;
-    height:400px;
-    overflow:auto;
+    //position:sticky;
+    //float:left;
+    //max-width:280px;
+    //height:400px;
+    //overflow:auto;
   }
 
   #temporary {
@@ -281,12 +335,14 @@ img {
   }
 
   #map {
-    max-width: 350px;
+    max-width: 300px;
     height: 200px;
+    margin-bottom: 15px;
+
+
   }
 
   .text {
-    padding-top: 20px;
     max-width: 350px;
   }
 
@@ -294,10 +350,16 @@ img {
     color: white;
     font-size: 1.6em;
     margin-right: 5%;
-    width:70%;
-    overflow: visible;
+    width:75%;
+    //overflow: visible;
     border-spacing: 10px;
   }
+
+  //#table {
+  //  overflow: auto;
+  //  float: left;
+  //  height: 500px;
+  //}
 
   td, th {
     padding: 15px;

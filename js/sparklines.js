@@ -28,6 +28,9 @@ function spark(elemId, data) {
 
     data = data.sort(sortByDateAscending);
 
+    //select last 100 rows from data
+    data = data.slice(Math.max(data.length - 100, 1));
+
     var width = 100;
     var height = 20;
 
@@ -62,6 +65,7 @@ function spark(elemId, data) {
             .attr('height', height)
             .style("overflow", "visible")
         ;
+var plan_percent = data[data.length-1].plan_percent;
 
     svg.append("text")
         .data(data)
@@ -70,10 +74,11 @@ function spark(elemId, data) {
         .attr("text-anchor", "start")
         .style("fill", "grey")
         .text(function (d) {
-            return d.coal_type
+            return d.coal_type + ", " + plan_percent + "%"
         })
         .style("font-size", "0.8em")
         .style("padding-top", "5px");
+
 
 
     var letter = elemId.split("#").pop();
@@ -293,6 +298,9 @@ d3.csv(url_f, function (error, data) {
 
 
 
+
+//select last 100 rows from data
+// data.slice(Math.max(data.length - 100, 1))
 
 
 
