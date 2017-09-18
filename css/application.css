@@ -333,17 +333,14 @@ svg {
 @media (max-width: 1024px) {
   img {
     margin-bottom: 15px;
-    margin-top: 15px;
     width: 95%; } }
 @media (max-width: 400px) {
   img {
     margin-bottom: 15px;
-    margin-top: 15px;
     width: 85%; } }
 @media (min-width: 800px) {
   img {
     margin-bottom: 15px;
-    margin-top: 15px;
     width: 72%; } }
 
 .click {
