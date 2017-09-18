@@ -278,11 +278,6 @@ h3 {
 .text {
   overflow: -moz-scrollbars-none; }
 
-.sticker {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0; }
-
 body {
   font-family: Open Sans, sans-serif;
   color: #383e47;
