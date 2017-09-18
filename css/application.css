@@ -330,15 +330,15 @@ svg {
   color: white;
   background-color: #1c2124; }
 
-@media (max-width: 1024px) {
-  img {
-    margin-bottom: 15px;
-    width: 95%; } }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   img {
     margin-bottom: 15px;
     width: 85%; } }
-@media (min-width: 800px) {
+@media (min-width: 701px) and (max-width: 1079px) {
+  img {
+    margin-bottom: 15px;
+    width: 100%; } }
+@media (max-width: 4500px) {
   img {
     margin-bottom: 15px;
     width: 72%; } }
@@ -415,6 +415,9 @@ p span {
 
 tbody {
   color: white; }
+
+tr.no-bottom-border {
+  border-bottom-color: #1c2124; }
 
 #last {
   padding-bottom: 20px; }
@@ -536,7 +539,7 @@ thead {
   font-size: 1.2em;
   color: white; }
 
-th, td {
+tr {
   border-bottom: 1px solid #ddd; }
 
 table td {
@@ -567,7 +570,7 @@ td {
 
 .line.abovea, .line.aboveb, .line.abovec, .line.abovez, .line.abovee, .line.abovev, .line.aboveg,
 .line.abovei, .line.abovej, .line.abovek, .line.abovel, .line.abovem, .line.aboven, .line.abover, .line.aboveq,
-.line.abovep, .line.aboveo, .line.abovet, .line.abovef, .line.abovey, .line.aboves, .line.abovex {
+.line.abovep, .line.aboveo, .line.abovet, .line.abovex, .line.abovef, .line.abovey, .line.aboves {
   fill: none;
   stroke: #ffffff;
   stroke-width: 1px; }

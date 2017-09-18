@@ -29,9 +29,9 @@ function spark(elemId, data) {
     data = data.sort(sortByDateAscending);
 
     //select last 100 rows from data
-    data = data.slice(Math.max(data.length - 100, 1));
+    // data = data.slice(Math.max(data.length - 100, 1));
 
-    var width = 100;
+    var width = 90;
     var height = 20;
 
     var x = d3.scale
@@ -82,6 +82,7 @@ var plan_percent = data[data.length-1].plan_percent;
 
 
     var letter = elemId.split("#").pop();
+
 
 
     var test = "below" + letter;
@@ -172,10 +173,6 @@ var plan_percent = data[data.length-1].plan_percent;
             focus.select("text").text(formatCurrency(d.plan_percent) + " %");
         }
 
-
-
-
-
 }
 
 
@@ -216,7 +213,7 @@ d3.csv(url_v, function (error, data) {
 
 var url_y = "data/stations/v_g.csv";
 d3.csv(url_y, function (error, data) {
-    spark('div#v', data);
+    spark('div#y', data);
 });
 
 var url_g = "data/stations/g_g.csv";
@@ -292,15 +289,12 @@ d3.csv(url_x, function (error, data) {
 
 var url_f = "data/stations/x_g.csv";
 d3.csv(url_f, function (error, data) {
-    spark('div#x', data);
+    spark('div#f', data);
 });
 
 
 
-
-
-//select last 100 rows from data
-// data.slice(Math.max(data.length - 100, 1))
+// Зміївська ТЕС,16.339 <br/> 92.268,v,49.15201029759886,33
 
 
 
