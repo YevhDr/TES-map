@@ -337,8 +337,8 @@ svg {
 @media (min-width: 701px) and (max-width: 1079px) {
   img {
     margin-bottom: 15px;
-    width: 100%; } }
-@media (max-width: 4500px) {
+    width: 85%; } }
+@media (min-width: 1080px) and (max-width: 4500px) {
   img {
     margin-bottom: 15px;
     width: 72%; } }
