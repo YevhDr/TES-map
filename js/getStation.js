@@ -9,7 +9,12 @@
                 direction: 'right'
             }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>"+ "<br/>"+
+                "<b>610 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>"+ "<br/>"+
+                "<b>ДТЕК, Рінат Ахметов <span> – власник</span></b>"+ "<br/>"+
+                "<b>газове вугілля –  13,1 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -22,7 +27,12 @@
                 direction: 'right'
             }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>"+ "<br/>"+
+            "<b>325 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>"+ "<br/>"+
+            "<b>ПАТ «Центренерго» , держава <span>– власник</span></b>"+ "<br/>"+
+             "<b>газове вугілля –  6,0 тис. тонн<span> щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -35,7 +45,12 @@
                 direction: 'right'
             }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>немає даних <span> – максимальне  завантаження складів</span></b>"+ "<br/>" +
+                    "<b>немає даних <span> –  мінімальний залишок вугілля для функціовання</span></b>"+ "<br/>" +
+                    "<b>ТОВ «Євро– Реконструкція», Анатолій Шкрібляк  <span>– власник</span></b>"+ "<br/>" +
+                    "<b>антрацит – 1,7 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
 
         }
@@ -49,7 +64,12 @@
                 direction: 'right'
             }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>"+ "<br/>"+
+            "<b>310 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>"+ "<br/>"+
+            "<b>ДТЕК, Рінат Ахметов <span>– власник</span></b>"+ "<br/>"+
+            "<b>газове вугілля –  5,3 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+             .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -62,7 +82,12 @@
                 direction: 'right'
             }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>немає даних <span>– максимальне  завантаження складів </span></b>"+ "<br/>" +
+                    "<b>немає даних <span>–  мінімальний залишок вугілля для функціовання </span></b>"+ "<br/>"+
+                    "<b>«УкрІнтерЕнерго», держава <span>– власник</span></b>"+ "<br/>"+
+                    "<b> газове вугілля – 1,0 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -75,7 +100,12 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>немає даних <span>– максимальне  завантаження складів </span></b>"+ "<br/>"+
+            "<b>немає даних <span>–мінімальний залишок вугілля для функціовання </span></b>"+ "<br/>"+
+            "<b>«Contour Global», Нью-Йорк; Краматорська міська рада <span>–власник</span></b>"+ "<br/>"+
+            "<b>антрацит – 1,0 тис. тонн <span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -88,7 +118,12 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>120 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (пісне вугілля)</span></b>"+ "<br/>"+
+            "<b>550 тис. тонн<span>– максимальне  завантаження складів (пісне вугілля)</span></b>"+ "<br/>"+
+            "<b>ДТЕК, Рінат Ахметов <span>– власник</span></b>"+ "<br/>"+
+            "<b>пісне вугілля –  4,5 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -101,7 +136,12 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>"+ "<br/>"+
+                    "<b>583 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>"+ "<br/>"+
+                    "<b>ДТЕК, Рінат Ахметов – власник</span></b>"+ "<br/>"+
+                    "<b>газове вугілля –  8,9 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -114,7 +154,12 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>"+ "<br/>"+
+            "<b>488 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>"+ "<br/>"+
+            "<b>ДТЕК, Рінат Ахметов <span>– власник</span></b>"+ "<br/>"+
+            "<b>газове вугілля –  5,4 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -127,7 +172,12 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>50 тис. тонн<span>– мінімальний залишок вугілля для функціовання (антрацит)</span></b>"+ "<br/>"+
+                 "<b>820 тис. тонн<span> – максимальне завантаження складів (антрацит)</span></b>"+ "<br/>"+
+                 "<b>«УкрІнтерЕнерго», держава  <span>– власник</span></b>"+ "<br/>"+
+                 "<b>антрацит –  5,8 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -140,7 +190,11 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+            .html("<b>80 тис. тонн  <span>–  мінімальний залишок вугілля для функціовання (антрацит)</span></b>" + "<br/>" +
+            "<b>410 тис. тонн <span>–  максимальне завантаження складів (антрацит)</span></b>" + "<br/>" +
+            "<b>ДТЕК, Рінат Ахметов <span>–  власник</span></b>" + "<br/>" +
+            "<b>антрацит – 4,7 тис. тонн <span> –  щоденні витрати у січні 2016</span></b>").attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -153,20 +207,12 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
-        }
-
-        if(stat === 'p') {
-            d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
-            d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
-            map.setView(new L.LatLng(47.799096,38.004681), 6);
-        L.marker([47.799096,38.004681], {icon: greenPoint}).bindTooltip("Старобешівська ТЕС", {
-            permanent: true,
-            direction: 'right'
-        }).addTo(cities);
-            d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+            .html("<b>40 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (антрацит)</span></b>"+ "<br/>"+
+            "<b>350 тис. тонн<span>–  максимальне завантаження складів (антрацит)</span></b>"+ "<br/>"+
+            "<b>ПАТ «ДОНБАСЕНЕРГО», Олександр Янукович <span> –  власник</span></b>"+ "<br/>"+
+            "<b>антрацит – 4,4 тис. тонн<span> –  щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -179,7 +225,12 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>немає даних <span>– максимальне  завантаження складів </span></b>"+ "<br/>" +
+                    "<b>немає даних <span>–  мінімальний залишок вугілля для функціовання </span></b>"+ "<br/>" +
+                    "<b>ДВ «Нафтогазовидобувна компанія», Павло Фукс <span>– власник</span></b>"+ "<br/>"+
+                    "<b>антрацит – 0,6 тис. тонн <span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -192,7 +243,12 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (антрацит)</span></b>"+ "<br/>"+
+            "<b>282 тис. тонн<span>–  максимальне завантаження складів (антрацит)</span></b>"+ "<br/>"+
+            "<b>ПАТ «Центренерго» , держава <span>–  власник</span></b>"+ "<br/>"+
+            "<b>антрацит – 4,9 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -205,7 +261,12 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>немає даних <span>– максимальне  завантаження складів </span></b>"+ "<br/>" +
+                    "<b>немає даних <span>–  мінімальний залишок вугілля для функціовання </span></b>"+ "<br/>" +
+                    "<b>ПАТ «Черкаське хімволокно», Анатолій Шкрібляк <span>– власник</span></b>"+ "<br/>" +
+                    "<b>газову вугілля – 1,5 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
@@ -218,11 +279,16 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+                .html("<b>немає даних <span>– максимальне  завантаження складів </span></b>"+ "<br/>"+
+                    "<b>немає даних <span>–  мінімальний залишок вугілля для функціовання </span></b>"+ "<br/>"+
+                    "<b> Чернігівська міська рада, в оренді ТОВ «ЧФірма «ТехНова», Анатолій Шкрібляк <span>– власник</span></b>"+ "<br/>"+
+            "<b>антрацит – 1,6 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
-        if(stat === 'v' || stat === 'y') {
+        if(stat === 'y') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(49.5865,36.52525), 6);
@@ -231,17 +297,34 @@
             direction: 'right'
         }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").
-            html("<b>ПАТ «Центренерго», держава <span> - власник</span></b>" + "<br/>" +
-            "<b>2 265 Мвт <span> - встановлена електрична потужність</span></b>  " + "<br/>" +
-            "<b>445 тис. тонн <span>  - максимальне завантаження складів (антрацит)</span></b>" + "<br/>" +
-            "<b>80 тис. тонн <span> - мінімальний залишок вугілля для функціовання (антрацит)</span></b> " + "<br/>" +
-            "<b>немає даних <span> - максимальне завантаження складів (газове вугілля)</span></b>" + "<br/>" +
-            "<b>немає даних <span> - мінімальний залишок вугілля для функціовання (газове вугілля)</span></b> ").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+            .html("<b>немає даних<span>– мінімальний залишок вугілля для функціовання (антрацит)</span></b>"+ "<br/>"+
+            "<b>немає даних<span>– максимальне завантаження складів (антрацит)</span></b>"+ "<br/>"+
+            "<b>ПАТ «Центренерго», держава <span>– власник</span></b>"+ "<br/>"+
+            "<b>газове вугілля – 1,2 тис. тонн<span> – щоденні витрати у січні 2016</span></b>")
+            .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
         }
 
-     if(stat === 'x'|| stat === 'f') {
+     if(stat === 'v') {
+         d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
+         d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
+         map.setView(new L.LatLng(49.5865,36.52525), 6);
+         L.marker([49.5865,36.52525], {icon: greenPoint}).bindTooltip("Зміївська ТЕС", {
+             permanent: true,
+             direction: 'right'
+         }).addTo(cities);
+         d3.selectAll("p#temporary").remove();
+         d3.select("div.text").append("p").attr("id","temporary")
+             .html("<b>80 тис. тонн<span>– мінімальний залишок вугілля для функціовання (антрацит)</span></b>"+ "<br/>"+
+                 "<b>445 тис. тонн<span>– максимальне завантаження складів (антрацит)</span></b>"+ "<br/>"+
+                 "<b>ПАТ «Центренерго», держава <span>– власник</span></b>"+ "<br/>"+
+                 "<b>антрацит –  3,8 тис. тонн<span> – щоденні витрати у січні 2016</span></b>")
+             .attr("font-size", "0.6vh");
+         d3.select("div#table").style("overflow", "auto").style("height", "300px");
+     }
+
+     if(stat === 'x') {
          d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
          d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
          map.setView(new L.LatLng(48.480556,38.289722), 6);
@@ -250,7 +333,30 @@
              direction: 'right'
          }).addTo(cities);
          d3.selectAll("p#temporary").remove();
-         d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+         d3.select("div.text").append("p").attr("id","temporary")
+             .html("<b>немає даних –  мінімальний залишок вугілля для функціовання</span></b>"+ "<br/>"+
+         "<b>антрацит –  90 тис. тонн <span>– максимальне  завантаження складів</span></b>"+ "<br/>" +
+         "<b>ДТЕК, Рінат Ахметов <span>– власник</span></b>"+ "<br/>"+
+         "<b>антрацит – 0,7 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+             .attr("font-size", "0.6vh");
+         d3.select("div#table").style("overflow", "auto").style("height", "300px");
+     }
+
+     if(stat === 'f') {
+         d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
+         d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
+         map.setView(new L.LatLng(48.480556,38.289722), 6);
+         L.marker([49.5865,36.52525], {icon: redPoint}).bindTooltip("Миронівська ТЕС", {
+             permanent: true,
+             direction: 'right'
+         }).addTo(cities);
+         d3.selectAll("p#temporary").remove();
+         d3.select("div.text").append("p").attr("id","temporary")
+             .html("<b>немає даних –  мінімальний залишок вугілля для функціовання</span></b>"+ "<br/>"+
+                 "<b>антрацит –  90 тис. тонн <span>– максимальне  завантаження складів</span></b>"+ "<br/>" +
+                 "<b>ДТЕК, Рінат Ахметов <span>– власник</span></b>"+ "<br/>"+
+                 "<b>газове вугілля – 0,5 тис. тонн <span>– щоденні витрати у січні 2016</span></b>")
+             .attr("font-size", "0.6vh");
          d3.select("div#table").style("overflow", "auto").style("height", "300px");
      }
 
@@ -263,7 +369,12 @@
                 direction: 'right'
             }).addTo(cities);
             d3.selectAll("p#temporary").remove();
-            d3.select("div.text").append("p").attr("id","temporary").text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak").attr("font-size", "0.6vh");
+            d3.select("div.text").append("p").attr("id","temporary")
+             .html("<b>40 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>"+ "<br/>"+
+             "<b>220 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>"+ "<br/>"+
+             "<b>ДТЕК, Рінат Ахметов <span>– власник</span></b>"+ "<br/>"+
+             "<b>газове вугілля –  3,2 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+                .attr("font-size", "0.6vh");
             d3.select("div#table").style("overflow", "auto").style("height", "300px");
 
         }
