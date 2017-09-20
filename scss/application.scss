@@ -91,13 +91,22 @@ svg {
 }
 
 img {
-    @media (max-width: 700px) {
+
+  @media (max-width: 400px) {
     margin-bottom: 15px;
-    width: 85%; }
+    width: 93%;
+    margin-left: 5%;
+  }
+
+  @media (min-width: 401px) and (max-width: 700px) {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
 
   @media (min-width: 701px) and (max-width: 1079px) {
     margin-bottom: 15px;
-   width: 85%;
+    width: 100%;
   }
 
   @media (min-width: 1080px) and (max-width: 4500px) {
@@ -208,6 +217,29 @@ tr.no-bottom-border {
 #last {
     padding-bottom: 20px;
 }
+
+
+#map {
+  @media (max-width: 320px) {
+    max-width: 320px;
+    height: 200px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: 321px) and (max-width: 700px) {
+    max-width: 600px;
+    height: 200px;
+    margin-bottom: 5px;
+    margin-right: 2%;
+  }
+
+  @media (min-width: 701px) {
+    max-width: 250px;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+}
+
 /////////////////////////////////////////
 //////////////////MOBILE/////////////////
 /////////////////////////////////////////
@@ -221,11 +253,6 @@ tr.no-bottom-border {
 }
 
 @media (max-width: 480px) {
-
-
-
-
-
 
   .col-xl-8 .col-md-offset-1 .col-lg-8 .col-md-8 .col-sm-7 {
     margin-left: 5%;
@@ -254,10 +281,7 @@ tr.no-bottom-border {
 
   }
 
-  #map {
-    max-width: 480px;
-    height: 200px;
-  }
+
 
   .text {
     padding-top: 20px;
@@ -286,6 +310,14 @@ tr.no-bottom-border {
     padding: 5px;
     word-wrap:break-word; }
 }
+
+
+/////////////////////////////////////////
+//////////////////LANDSCAPE MOBILE/////////////////
+/////////////////////////////////////////
+
+
+
 
 
 /////////////////////////////////////////
@@ -338,16 +370,10 @@ tr.no-bottom-border {
     padding-bottom: 50px;
   }
 
-  #map {
-    max-width: 300px;
-    height: 200px;
-    margin-bottom: 15px;
 
-
-  }
 
   .text {
-    max-width: 350px;
+    max-width: 90%;
   }
 
   table {

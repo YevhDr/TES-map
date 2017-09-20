@@ -27,7 +27,7 @@ d3.csv(file, function(error, data) {
     var titles = d3.keys(data[0]);
     var headers = table.append('thead').append('tr')
         .selectAll('th')
-        .data(["Станція", "Залишок", "Виконання плану"]).enter()
+        .data(["Станція", "Залишок, тис.тонн", "Виконання плану"]).enter()
         // .data(titles).enter()
         .append('th')
         .text(function (d) {

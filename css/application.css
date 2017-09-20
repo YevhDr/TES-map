@@ -330,14 +330,19 @@ svg {
   color: white;
   background-color: #1c2124; }
 
-@media (max-width: 700px) {
+@media (max-width: 400px) {
   img {
     margin-bottom: 15px;
-    width: 85%; } }
+    width: 93%;
+    margin-left: 5%; } }
+@media (min-width: 401px) and (max-width: 700px) {
+  img {
+    margin-bottom: 15px;
+    width: 100%; } }
 @media (min-width: 701px) and (max-width: 1079px) {
   img {
     margin-bottom: 15px;
-    width: 85%; } }
+    width: 100%; } }
 @media (min-width: 1080px) and (max-width: 4500px) {
   img {
     margin-bottom: 15px;
@@ -422,6 +427,23 @@ tr.no-bottom-border {
 #last {
   padding-bottom: 20px; }
 
+@media (max-width: 320px) {
+  #map {
+    max-width: 320px;
+    height: 200px;
+    margin-bottom: 5px; } }
+@media (min-width: 321px) and (max-width: 700px) {
+  #map {
+    max-width: 600px;
+    height: 200px;
+    margin-bottom: 5px;
+    margin-right: 2%; } }
+@media (min-width: 701px) {
+  #map {
+    max-width: 250px;
+    height: 200px;
+    margin-bottom: 15px; } }
+
 @media (width: 320px) {
   table {
     font-size: 1em;
@@ -448,10 +470,6 @@ tr.no-bottom-border {
     color: white;
     line-height: 1.5em;
     font-weight: bold; }
-
-  #map {
-    max-width: 480px;
-    height: 200px; }
 
   .text {
     padding-top: 20px;
@@ -498,13 +516,8 @@ tr.no-bottom-border {
     background-color: #1c2124;
     padding-bottom: 50px; }
 
-  #map {
-    max-width: 300px;
-    height: 200px;
-    margin-bottom: 15px; }
-
   .text {
-    max-width: 350px; }
+    max-width: 90%; }
 
   table {
     color: white;
