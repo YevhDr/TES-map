@@ -379,5 +379,15 @@
 
         }
 
+     d3.selectAll("td")
+         .on("click", function () {
+             d3.select("#button-return")
+                 .classed("hidden-return", false);
 
+         });
+
+    d3.select("input#button-return").on("click", function() {
+        window.location.reload()
+    });
 };
+

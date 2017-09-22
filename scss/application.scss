@@ -5,6 +5,19 @@
 @import "components/footer";
 @import "components/weirdo";
 
+.logo {
+  float: left;
+  padding: 1px 19px 0 0;
+  position: fixed;
+  margin: 15px 0px 0px 15px;
+  z-index: 1000;
+}
+
+
+
+.hidden-return {
+  display:none;
+}
 .text { overflow: -moz-scrollbars-none; }
 
 //.sticker {
@@ -90,7 +103,7 @@ svg {
   background-color: #1c2124;
 }
 
-img {
+.gide {
 
   @media (max-width: 400px) {
     margin-bottom: 15px;

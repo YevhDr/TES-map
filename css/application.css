@@ -275,6 +275,16 @@ h3 {
       fill: none;
       stroke: none; }
 
+.logo {
+  float: left;
+  padding: 1px 19px 0 0;
+  position: fixed;
+  margin: 15px 0px 0px 15px;
+  z-index: 1000; }
+
+.hidden-return {
+  display: none; }
+
 .text {
   overflow: -moz-scrollbars-none; }
 
@@ -331,20 +341,20 @@ svg {
   background-color: #1c2124; }
 
 @media (max-width: 400px) {
-  img {
+  .gide {
     margin-bottom: 15px;
     width: 93%;
     margin-left: 5%; } }
 @media (min-width: 401px) and (max-width: 700px) {
-  img {
+  .gide {
     margin-bottom: 15px;
     width: 100%; } }
 @media (min-width: 701px) and (max-width: 1079px) {
-  img {
+  .gide {
     margin-bottom: 15px;
     width: 100%; } }
 @media (min-width: 1080px) and (max-width: 4500px) {
-  img {
+  .gide {
     margin-bottom: 15px;
     width: 72%; } }
 
