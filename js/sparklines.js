@@ -175,31 +175,37 @@ var plan_percent = data[data.length-1].plan_percent;
 
 }
 
-
- var url_a = "data/stations/a_g.csv";
+var url_a = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS6LPsifgnpqY6expgn0QByGyMg86yZuyRgUNkAGQtMb_dRuC2r7sklrCrt2oZhKlD8NbZ37KTDByJr/pub?gid=1019885254&single=true&output=csv";
+// var url_a = "data/stations/a_g.csv";
  d3.csv(url_a, function (error, data) {
      spark('div#a', data);
 
  });
 
-var url_b = "data/stations/b_g.csv";
+var url_b = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTJEW6nKsJm2rP4fG0gK-rYo7l6mLqxlLz6gFKHRcp5K4IoWwtL3E5vwhLtdulDL4d38eELfjRZyTfu/pub?gid=1120876805&single=true&output=csv"
+// var url_b = "data/stations/b_g.csv";
 d3.csv(url_b, function (error, data) {
     spark('div#b', data);
 
 });
 
-
-var url_c = "data/stations/c_a.csv";
+var url_c = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTwJV1HmXlmE9RpSXbTI3FkqxXkJJRgegd0119D1i8IMfD6hOIZalUK6X0LspGXorzDvIpNGuvvW8sh/pub?gid=505724100&single=true&output=csv";
+// var url_c = "data/stations/c_a.csv";
 d3.csv(url_c, function (error, data) {
     spark('div#c', data);
 });
 
 
-var url_z = "data/stations/z_g.csv";
+
+var url_z = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRIWHuLM1_6FKHwinALxRZE2pDLSipwYtQ0GpOPNpZQ6lSk_p4M65g8TTiAo_Ol7KpKj6YLV7ktkGyR/pub?gid=146041827&single=true&output=csv";
+// var url_z = "data/stations/z_g.csv";
 d3.csv(url_z, function (error, data) {
     spark('div#z', data);
 
 });
+
+
+
 
 var url_e = "data/stations/e_g.csv";
 d3.csv(url_e, function (error, data) {
