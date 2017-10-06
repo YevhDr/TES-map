@@ -1,4 +1,4 @@
-var file = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR4d-loqjlGmXlhs5ncxzYLPPrk5NblgJAUJwhBOI2gjJ7u4KrIi-Bbp69V-5b5X0FfLm4D4ECgc4OQ/pub?gid=1476275405&single=true&output=csv";
+var file = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR4d-loqjlGmXlhs5ncxzYLPPrk5NblgJAUJwhBOI2gjJ7u4KrIi-Bbp69V-5b5X0FfLm4D4ECgc4OQ/pub?output=csv";
 
 d3.csv(file, function(error, data) {
     if (error) throw error;
