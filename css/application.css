@@ -380,7 +380,7 @@ svg {
 
 h1 {
   color: white;
-  font-size: 4.3em;
+  font-size: 5em;
   margin-bottom: 50px;
   line-height: 1.5em;
   font-weight: bold; }
@@ -429,7 +429,7 @@ p span {
 tbody {
   color: white; }
 
-tr.no-bottom-border {
+#table table tr.no-bottom-border {
   border-bottom-color: #1c2124; }
 
 #last {
@@ -453,7 +453,7 @@ tr.no-bottom-border {
     margin-bottom: 15px; } }
 
 @media (width: 320px) {
-  table {
+  #table table {
     font-size: 1em;
     margin-bottom: 15px; } }
 @media (max-width: 480px) {
@@ -485,7 +485,7 @@ tr.no-bottom-border {
     padding-bottom: 10px;
     max-width: 90%; }
 
-  table {
+  #table table {
     color: white;
     font-size: 1.1em;
     width: 75%;
@@ -493,7 +493,7 @@ tr.no-bottom-border {
     margin-right: 5%;
     margin-bottom: 15px; }
 
-  th, td {
+  #table table th, td {
     padding: 5px;
     word-wrap: break-word; } }
 @media (min-width: 481px) {
@@ -527,7 +527,7 @@ tr.no-bottom-border {
   .text {
     max-width: 90%; }
 
-  table {
+  #table table {
     table-layout: inherit;
     color: white;
     font-size: 1.6em;
@@ -535,7 +535,7 @@ tr.no-bottom-border {
     width: 100%;
     border-spacing: 10px; }
 
-  td, th {
+  #table table td, th {
     padding: 15px; }
 
   .main {
@@ -561,17 +561,17 @@ thead {
   font-size: 1em;
   color: white; }
 
-tr {
+#table table tr {
   border-bottom: 1px solid #ddd; }
 
-table td {
+#table table table td {
   text-align: left; }
 
-table td:nth-child(2) {
+#table table td:nth-child(2) {
   text-align: center; }
 
 тАЛ,
-tr:hover {
+#table table tr:hover {
   background-color: #3f4042; }
 
 .focus circle {
@@ -582,7 +582,7 @@ tr:hover {
 tbody {
   font-weight: normal; }
 
-td {
+#table table td {
   padding: 5px 0; }
 
 .line {
@@ -609,5 +609,14 @@ td {
 .sparkcircle {
   fill: #f00;
   stroke: none; }
+
+.annotate {
+  margin-left: 10%;
+  margin-top: 30px;
+  font-size: 1.2em;
+  width: 50%;
+  align-content: center;
+  border-bottom: none !important;
+  font-style: italic; }
 
 /*# sourceMappingURL=application.css.map */

@@ -29,11 +29,14 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/application.css"/>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script src="js/d3-ring-note.js"></script>
+    <script src="js/snow.js"></script>
 
 
 </head>
 
 <body>
+
 
 <div class="header">
     <div class="row logo-buttons" style="width:100%;">
@@ -104,7 +107,7 @@
 
             </div>
             <!--<input type="button" style="margin-top:20px" value="Повернутись" onClick="window.location.reload()">-->
-            <input id="button-return" class="hidden-return" type="button" style="margin-top:20px" value="Повернутись">
+            <input id="button-return" class="hidden-return" type="button" style="margin-top:20px;" value="Повернутись">
         </div>
 
         <div class="col-sm-8 col-md-offset-0.5 col-md-8 col-lg-8 col-xl-9">
@@ -114,11 +117,14 @@
                 <h3>Наскільки електростанції виконують план із накопичення вугілля? Дані оновлюються
                 кожного робочого дня.</h3>
             </div>
-                <img class="gide" src="img/gide-2-01.jpg">
+            <div id="annotation"></div>
+
+
+                <!--<img class="gide" src="img/gide-2-01.jpg">-->
 
 
 
-            <p class="click"><i>Клікніть на станцію, аби дізнатись про неї більше</i></p>
+            <p style = "margin-top: 40px; color:#FAA61A"><b>Клікніть на станцію, аби дізнатись про неї більше</b> </p>
 
             <div id="table"></div>
 
@@ -130,12 +136,33 @@
 
         </div>
     </div>
+    <script>
+
+        // Amount of Snowflakes
+        var snowMax = 10;
+
+        var snowColor = ["#DDD", "#EEE"];
+
+        var snowEntity = "&#x2022;";
+
+        var snowSpeed = 0.90;
+
+        var snowMinSize = 8;
+
+        var snowMaxSize = 24;
+
+        var snowRefresh = 50;
+
+        var snowStyles = "cursor: default; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none;";
+    </script>
 
 
     <script src="js/getStation.js"></script>
     <script src="js/leaf-demo.js"></script>
     <script src="js/table.js"></script>
     <script src="js/sparklines.js"></script>
+    <script src="js/annotation/spark_annotation.js"></script>
+    <script src="js/annotation/table_annotation.js"></script>
     <!--<script src="js/changeClassName.js"></script>-->
 
 

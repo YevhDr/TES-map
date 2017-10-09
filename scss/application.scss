@@ -22,6 +22,7 @@
 
 .hidden-return {
   display:none;
+
 }
 .text { overflow: -moz-scrollbars-none; }
 
@@ -96,6 +97,7 @@ body {
 ::-webkit-scrollbar-thumb
 {
   background: rgba(0, 0, 0, 0.2);
+
 }
 
 
@@ -163,7 +165,7 @@ svg {
 
   h1 {
     color: white;
-    font-size: 4.3em;
+    font-size: 5em;
     margin-bottom: 50px;
     line-height: 1.5em;
     font-weight: bold;
@@ -226,7 +228,7 @@ tbody {
     color:white;
 }
 
-tr.no-bottom-border {
+#table table tr.no-bottom-border {
       border-bottom-color: #1c2124;
 }
 
@@ -262,7 +264,7 @@ tr.no-bottom-border {
 
 @media (width: 320px) {
 
-  table {
+  #table table {
     font-size: 1em;
     margin-bottom: 15px;
 
@@ -307,7 +309,7 @@ tr.no-bottom-border {
     max-width: 90%;
   }
 
-  table {
+  #table table {
     color: white;
     font-size: 1.1em;
     width: 75%;
@@ -319,7 +321,7 @@ tr.no-bottom-border {
 
 
 
-  th, td {
+  #table table th, td {
     padding: 5px;
     word-wrap:break-word; }
 }
@@ -389,7 +391,7 @@ tr.no-bottom-border {
     max-width: 90%;
   }
 
-  table {
+  #table table {
     table-layout: inherit;
     color: white;
     font-size: 1.6em;
@@ -399,7 +401,7 @@ tr.no-bottom-border {
   }
 
 
-  td, th {
+  #table table td, th {
     padding: 15px;
   }
 
@@ -439,23 +441,23 @@ thead {
 }
 
 
-tr {
+#table table tr {
   border-bottom: 1px solid #ddd;
 }
 
 
 
-table td {
+#table table table td {
   text-align: left;
 }
 
-table  td:nth-child(2) {
+#table table  td:nth-child(2) {
   text-align: center;
 
 }​,
 
 
-tr:hover {
+ #table table tr:hover {
   background-color: #3f4042
 }
 
@@ -470,7 +472,7 @@ tbody {
 
 }
 
-td {
+#table table td {
   padding: 5px 0;
 }
 
@@ -504,3 +506,16 @@ td {
   fill: #f00;
   stroke: none;
 }
+
+.annotate {
+  margin-left: 10%;
+  margin-top: 30px;
+  font-size: 1.2em;
+  width:50%;
+  //table-layout: auto;
+  align-content: center;
+  border-bottom: none!important;
+  font-style:italic;
+}
+
+

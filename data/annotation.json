@@ -1,0 +1,100 @@
+[
+      { "station": "",
+        "id": "a",
+        "reserve": "поточне виконення плану",
+        "mentions":[
+          {
+          "date": "2017-06-09",
+          "reserve": 95.299,
+          "min": 80,
+          "max": 410,
+          "planned": 77.23315985207161,
+          "plan_percent": 50,
+          "coal_type": "антрацит",
+          "days": 0
+          },
+          {
+          "date": "2017-07-28",
+          "reserve": 106.163,
+          "min": 80,
+          "max": 410,
+          "planned": 167.8659331475239,
+          "plan_percent": 63,
+          "coal_type": "антрацит",
+          "days": 69
+          },
+          {
+          "date": "2017-04-05",
+          "reserve": 30.789,
+          "min": 80,
+          "max": 410,
+          "planned": 34.574008004759456,
+          "plan_percent": 89,
+          "coal_type": "антрацит",
+          "days": 34
+          },
+          {
+          "date": "2017-03-07",
+          "reserve": 91.83,
+          "min": 80,
+          "max": 410,
+          "planned": 74.59966524935668,
+          "plan_percent": 0,
+          "coal_type": "антрацит",
+          "days": 0
+          },
+          {
+          "date": "2017-02-09",
+          "reserve": 95.299,
+          "min": 80,
+          "max": 410,
+          "planned": 77.23315985207161,
+          "plan_percent": 68,
+          "coal_type": "антрацит",
+          "days": 0
+          },
+          {
+            "date": "2017-07-28",
+            "reserve": 106.163,
+            "min": 80,
+            "max": 410,
+            "planned": 167.8659331475239,
+            "plan_percent": 78,
+            "coal_type": "антрацит",
+            "days": 69
+          },
+          {
+            "date": "2017-04-05",
+            "reserve": 30.789,
+            "min": 80,
+            "max": 410,
+            "planned": 34.574008004759456,
+            "plan_percent": 78,
+            "coal_type": "антрацит",
+            "days": 34
+          },
+          {
+            "date": "2017-03-07",
+            "reserve": 91.83,
+            "min": 80,
+            "max": 410,
+            "planned": 74.59966524935668,
+            "plan_percent": 115,
+            "coal_type": "антрацит",
+            "days": 0
+          },
+          {
+          "date": "2017-08-19",
+          "reserve": 109.152,
+          "min": 80,
+          "max": 410,
+          "planned": 147.3443335647401,
+          "plan_percent": 24,
+          "coal_type": "антрацит",
+          "days": 98
+          }],
+        "plan_percent": 206.0}
+
+]
+
+    

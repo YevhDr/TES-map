@@ -4,7 +4,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(49.207883, 24.666714), 6);
-            L.marker([49.207883, 24.666714], {icon: greenPoint}).bindTooltip("Бурштинська ТЕС", {
+            L.marker([49.207883, 24.666714], {icon: yellowPoint}).bindTooltip("Бурштинська ТЕС", {
                 permanent: true,
                 direction: 'right'
             }).addTo(cities);
@@ -22,7 +22,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.463149, 38.202597), 6);
-            L.marker([48.463149, 38.202597], {icon: greenPoint}).bindTooltip("Вуглегірська ТЕС", {
+            L.marker([48.463149, 38.202597], {icon: yellowPoint}).bindTooltip("Вуглегірська ТЕС", {
                 permanent: true,
                 direction: 'right'
             }).addTo(cities);
@@ -40,7 +40,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(50.446638, 30.639666), 6);
-            L.marker([50.446638, 30.639666], {icon: greenPoint}).bindTooltip("Дарницька ТЕС", {
+            L.marker([50.446638, 30.639666], {icon: yellowPoint}).bindTooltip("Дарницька ТЕС", {
                 permanent: true,
                 direction: 'right'
             }).addTo(cities);
@@ -59,7 +59,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(47.5086, 34.6256), 6);
-            L.marker([47.5086, 34.6256], {icon: greenPoint}).bindTooltip("Запорізька ТЕС", {
+            L.marker([47.5086, 34.6256], {icon: yellowPoint}).bindTooltip("Запорізька ТЕС", {
                 permanent: true,
                 direction: 'right'
             }).addTo(cities);
@@ -77,7 +77,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(49.071129,24.319353), 6);
-            L.marker([49.071129,24.319353], {icon: greenPoint}).bindTooltip("Калуська ТЕС", {
+            L.marker([49.071129,24.319353], {icon: yellowPoint}).bindTooltip("Калуська ТЕС", {
                 permanent: true,
                 direction: 'right'
             }).addTo(cities);
@@ -95,7 +95,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.747775,37.573545), 6);
-        L.marker([48.747775,37.573545], {icon: greenPoint}).bindTooltip("Краматорська ТЕС", {
+        L.marker([48.747775,37.573545], {icon: yellowPoint}).bindTooltip("Краматорська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -113,7 +113,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(47.566448,33.64328), 6);
-        L.marker([47.566448,33.64328], {icon: greenPoint}).bindTooltip("Криворізька ТЕС", {
+        L.marker([47.566448,33.64328], {icon: yellowPoint}).bindTooltip("Криворізька ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -131,7 +131,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(47.99459,37.237741), 6);
-        L.marker([47.99459,37.237741], {icon: greenPoint}).bindTooltip("Курахівська ТЕС", {
+        L.marker([47.99459,37.237741], {icon: yellowPoint}).bindTooltip("Курахівська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -149,7 +149,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.706825,29.220188), 6);
-        L.marker([48.706825,29.220188], {icon: greenPoint}).bindTooltip("Ладижинська ТЕС", {
+        L.marker([48.706825,29.220188], {icon: yellowPoint}).bindTooltip("Ладижинська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -167,7 +167,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.748741,39.260899), 6);
-        L.marker([48.748741,39.260899], {icon: greenPoint}).bindTooltip("Луганська ТЕС", {
+        L.marker([48.748741,39.260899], {icon: yellowPoint}).bindTooltip("Луганська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -185,7 +185,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.403499,35.118088), 6);
-        L.marker([48.403499,35.118088], {icon: greenPoint}).bindTooltip("Придніпровська ТЕС", {
+        L.marker([48.403499,35.118088], {icon: yellowPoint}).bindTooltip("Придніпровська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -202,7 +202,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.871596,37.764766), 6);
-        L.marker([48.871596,37.764766], {icon: greenPoint}).bindTooltip("Слов'янська ТЕС", {
+        L.marker([48.871596,37.764766], {icon: yellowPoint}).bindTooltip("Слов'янська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -220,7 +220,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(49.797068,36.590277), 6);
-        L.marker([49.797068,36.590277], {icon: greenPoint}).bindTooltip("ТЕЦ-2 (Есхар) ТЕС", {
+        L.marker([49.797068,36.590277], {icon: yellowPoint}).bindTooltip("ТЕЦ-2 (Есхар) ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -238,7 +238,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(50.134847,30.745404), 6);
-        L.marker([50.134847,30.745404], {icon: greenPoint}).bindTooltip("Трипільська ТЕС", {
+        L.marker([50.134847,30.745404], {icon: yellowPoint}).bindTooltip("Трипільська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -256,7 +256,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(49.386221,32.060906), 6);
-        L.marker([49.386221,32.060906], {icon: greenPoint}).bindTooltip("Черкаська ТЕС", {
+        L.marker([49.386221,32.060906], {icon: yellowPoint}).bindTooltip("Черкаська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -274,7 +274,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(51.455278,31.262222), 6);
-        L.marker([51.455278,31.262222], {icon: greenPoint}).bindTooltip("Чернігівська ТЕС", {
+        L.marker([51.455278,31.262222], {icon: yellowPoint}).bindTooltip("Чернігівська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -292,7 +292,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(49.5865,36.52525), 6);
-        L.marker([49.5865,36.52525], {icon: greenPoint}).bindTooltip("Зміївська ТЕС", {
+        L.marker([49.5865,36.52525], {icon: yellowPoint}).bindTooltip("Зміївська ТЕС", {
             permanent: true,
             direction: 'right'
         }).addTo(cities);
@@ -310,7 +310,7 @@
          d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
          d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
          map.setView(new L.LatLng(49.5865,36.52525), 6);
-         L.marker([49.5865,36.52525], {icon: greenPoint}).bindTooltip("Зміївська ТЕС", {
+         L.marker([49.5865,36.52525], {icon: yellowPoint}).bindTooltip("Зміївська ТЕС", {
              permanent: true,
              direction: 'right'
          }).addTo(cities);
@@ -328,7 +328,7 @@
          d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
          d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
          map.setView(new L.LatLng(48.480556,38.289722), 6);
-         L.marker([49.5865,36.52525], {icon: greenPoint}).bindTooltip("Миронівська ТЕС", {
+         L.marker([49.5865,36.52525], {icon: yellowPoint}).bindTooltip("Миронівська ТЕС", {
              permanent: true,
              direction: 'right'
          }).addTo(cities);
@@ -346,7 +346,7 @@
          d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
          d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
          map.setView(new L.LatLng(48.480556,38.289722), 6);
-         L.marker([49.5865,36.52525], {icon: greenPoint}).bindTooltip("Миронівська ТЕС", {
+         L.marker([49.5865,36.52525], {icon: yellowPoint}).bindTooltip("Миронівська ТЕС", {
              permanent: true,
              direction: 'right'
          }).addTo(cities);
@@ -364,7 +364,7 @@
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(50.219662,24.373773), 6);
-            L.marker([50.219662,24.373773], {icon: greenPoint}).bindTooltip("Добротвірська ТЕС", {
+            L.marker([50.219662,24.373773], {icon: yellowPoint}).bindTooltip("Добротвірська ТЕС", {
                 permanent: true,
                 direction: 'right'
             }).addTo(cities);
