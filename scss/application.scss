@@ -47,6 +47,7 @@ body {
   margin-right: 5%;
   //margin-left: 5%;
 }
+
 .remains {
   white-space: pre;
 }
@@ -109,27 +110,24 @@ svg {
 }
 
 .gide {
+  margin-bottom: 10px;
 
   @media (max-width: 400px) {
-    margin-bottom: 15px;
-    width: 100%;
-    //margin-left: 5%;
+    width: 95%;
+    margin-left: 3%;
   }
 
   @media (min-width: 401px) and (max-width: 700px) {
-    margin-bottom: 15px;
     width: 100%;
   }
 
 
   @media (min-width: 701px) and (max-width: 1079px) {
-    margin-bottom: 15px;
     width: 100%;
   }
 
   @media (min-width: 1080px) and (max-width: 4500px) {
-    margin-bottom: 15px;
-    width: 75%;
+    width: 98%;
   }
 
 
@@ -159,13 +157,13 @@ svg {
     margin-left: 5%;
     margin-right: 5%;
     text-align: right;
-    width: 67%;
+    width: 90%;
   }
  }
 
   h1 {
     color: white;
-    font-size: 4.2em;
+    font-size: 4.3em;
     margin-bottom: 50px;
     line-height: 1.5em;
     font-weight: bold;
@@ -180,7 +178,7 @@ h3 {
     color: white;
     margin-top: 0;
     line-height: 1.5em;
-    width: 70%;
+    width: 80%;
 
   @media(max-width: 480px) {
     margin-left: 5%;
@@ -313,17 +311,13 @@ tr.no-bottom-border {
     color: white;
     font-size: 1.1em;
     width: 75%;
-    margin-left: 1%;
+    margin-left: 3%;
     margin-right: 5%;
     margin-bottom: 15px;
     //margin-top: 250px;
   }
 
-  //#table {
-  //  overflow: auto;
-  //  float:left;
-  //  height: 500px;
-  //}
+
 
   th, td {
     padding: 5px;
@@ -396,19 +390,14 @@ tr.no-bottom-border {
   }
 
   table {
+    table-layout: inherit;
     color: white;
     font-size: 1.6em;
     margin-right: 5%;
-    width:60%;
-    //overflow: visible;
+    width:100%;
     border-spacing: 10px;
   }
 
-  //#table {
-  //  overflow: auto;
-  //  float: left;
-  //  height: 500px;
-  //}
 
   td, th {
     padding: 15px;
@@ -450,12 +439,6 @@ thead {
 }
 
 
-//table td:nth-child(3) {
-//  width: 50%
-//}
-
-
-
 tr {
   border-bottom: 1px solid #ddd;
 }
@@ -466,12 +449,11 @@ table td {
   text-align: left;
 }
 
-
-
-
-table td:nth-child(2) {
+table  td:nth-child(2) {
   text-align: center;
+
 }​,
+
 
 tr:hover {
   background-color: #3f4042

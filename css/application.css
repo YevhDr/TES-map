@@ -340,22 +340,21 @@ svg {
   color: white;
   background-color: #1c2124; }
 
-@media (max-width: 400px) {
-  .gide {
-    margin-bottom: 15px;
-    width: 100%; } }
-@media (min-width: 401px) and (max-width: 700px) {
-  .gide {
-    margin-bottom: 15px;
-    width: 100%; } }
-@media (min-width: 701px) and (max-width: 1079px) {
-  .gide {
-    margin-bottom: 15px;
-    width: 100%; } }
-@media (min-width: 1080px) and (max-width: 4500px) {
-  .gide {
-    margin-bottom: 15px;
-    width: 75%; } }
+.gide {
+  margin-bottom: 10px; }
+  @media (max-width: 400px) {
+    .gide {
+      width: 95%;
+      margin-left: 3%; } }
+  @media (min-width: 401px) and (max-width: 700px) {
+    .gide {
+      width: 100%; } }
+  @media (min-width: 701px) and (max-width: 1079px) {
+    .gide {
+      width: 100%; } }
+  @media (min-width: 1080px) and (max-width: 4500px) {
+    .gide {
+      width: 98%; } }
 
 .click {
   margin-top: 20px;
@@ -377,11 +376,11 @@ svg {
       margin-left: 5%;
       margin-right: 5%;
       text-align: right;
-      width: 67%; } }
+      width: 90%; } }
 
 h1 {
   color: white;
-  font-size: 4.2em;
+  font-size: 4.3em;
   margin-bottom: 50px;
   line-height: 1.5em;
   font-weight: bold; }
@@ -394,7 +393,7 @@ h3 {
   color: white;
   margin-top: 0;
   line-height: 1.5em;
-  width: 70%; }
+  width: 80%; }
   @media (max-width: 480px) {
     h3 {
       margin-left: 5%;
@@ -490,7 +489,7 @@ tr.no-bottom-border {
     color: white;
     font-size: 1.1em;
     width: 75%;
-    margin-left: 1%;
+    margin-left: 3%;
     margin-right: 5%;
     margin-bottom: 15px; }
 
@@ -529,10 +528,11 @@ tr.no-bottom-border {
     max-width: 90%; }
 
   table {
+    table-layout: inherit;
     color: white;
     font-size: 1.6em;
     margin-right: 5%;
-    width: 60%;
+    width: 100%;
     border-spacing: 10px; }
 
   td, th {
