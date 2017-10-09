@@ -343,8 +343,7 @@ svg {
 @media (max-width: 400px) {
   .gide {
     margin-bottom: 15px;
-    width: 93%;
-    margin-left: 5%; } }
+    width: 100%; } }
 @media (min-width: 401px) and (max-width: 700px) {
   .gide {
     margin-bottom: 15px;
@@ -450,7 +449,7 @@ tr.no-bottom-border {
     margin-right: 2%; } }
 @media (min-width: 701px) {
   #map {
-    max-width: 250px;
+    max-width: 220px;
     height: 200px;
     margin-bottom: 15px; } }
 
@@ -490,7 +489,7 @@ tr.no-bottom-border {
   table {
     color: white;
     font-size: 1.1em;
-    width: 60%;
+    width: 75%;
     margin-left: 1%;
     margin-right: 5%;
     margin-bottom: 15px; }
@@ -533,7 +532,7 @@ tr.no-bottom-border {
     color: white;
     font-size: 1.6em;
     margin-right: 5%;
-    width: 75%;
+    width: 60%;
     border-spacing: 10px; }
 
   td, th {
