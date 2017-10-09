@@ -1,5 +1,6 @@
 var file = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR4d-loqjlGmXlhs5ncxzYLPPrk5NblgJAUJwhBOI2gjJ7u4KrIi-Bbp69V-5b5X0FfLm4D4ECgc4OQ/pub?output=csv";
 
+
 d3.csv(file, function(error, data) {
     if (error) throw error;
 
@@ -27,7 +28,7 @@ d3.csv(file, function(error, data) {
     var titles = d3.keys(data[0]);
     var headers = table.append('thead').append('tr')
         .selectAll('th')
-        .data(["Станція", "Залишок, тис.тонн", "Виконання плану"]).enter()
+        .data(["Станція", "Різниця, тис. тонн", "Виконання плану"]).enter()
         // .data(titles).enter()
         .append('th')
         .text(function (d) {
@@ -67,7 +68,7 @@ d3.csv(file, function(error, data) {
         })
         .enter()
         .append('td')
-        .filter(function (d, i) { return i === 0 || i === 1 || i === 2 ;}) //return only 0,1,4 "columns"
+        .filter(function (d, i) { return i === 0 || i === 1 || i === 2;}) //return only 0,1,4 "columns"
         .append('div')
         .attr('id', function (d) {
             if (d.value.length < 2 && d.value !== 0)
