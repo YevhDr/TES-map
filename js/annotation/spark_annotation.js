@@ -130,8 +130,8 @@ var annotation = function () {
                 .attr("height", y(min));
 
             svg.append("text")
-                .attr("dy", y(min) + 2)
-                .attr("dx", width / 3)
+                .attr("dy", y(min) + 3)
+                .attr("dx", width / 3 + 4)
                 .attr("text-anchor", "start")
                 .style("fill", "white")
                 .text("план виконано < за 90%")
