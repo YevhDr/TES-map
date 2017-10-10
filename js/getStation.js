@@ -386,8 +386,11 @@
 
          });
 
-    d3.select("input#button-return").on("click", function() {
-        window.location.reload()
-    });
 };
+
+
+
+ d3.select("input#button-return").on("click", function() {
+     window.location.reload()
+ });
 

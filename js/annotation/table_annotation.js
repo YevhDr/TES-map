@@ -41,6 +41,17 @@ d3.json(file, function(error, data) {
         })
         .call(annotation());
 
+
+    // svg.append("text")
+    //     .attr("transform", "translate(" + (width - 80) + "," + y(data[data.length-1].plan_percent) + ")")
+    //     .attr("dy", y(min))
+    //     .attr("text-anchor", "start")
+    //     .style("fill", "white")
+    //     .text("виконання плану менше за 90%")
+    //     .style("font-size", "1em")
+    //     .style("padding-top", "5px")
+    //     .style("width", width);
+
     // rows.append('td')
     //     .text("динаміка виконання плану за останні 100 робочих днів")
     //     .attr('margin-right', "10px");

@@ -3,6 +3,8 @@ var annotation = function () {
     var width = 150;
     var height = 50;
 
+
+
     function chart(selection) {
 
         selection.each(function (data) {
@@ -90,8 +92,6 @@ var annotation = function () {
                 .style("font-size", "1em")
                 .style("padding-top", "5px")
                 .style("width", width);
-            //
-
 
             var parent_data = d3.select(this.parentNode).datum();
             var letter = parent_data.id;
@@ -101,6 +101,7 @@ var annotation = function () {
             var test2 = "above" + letter;
 
             var min = 90;
+
 
             svg.selectAll(".line")
                 .data([test, test2])
@@ -127,6 +128,26 @@ var annotation = function () {
                 .append("rect")
                 .attr("width", width)
                 .attr("height", y(min));
+
+            svg.append("text")
+                .attr("dy", y(min) + 2)
+                .attr("dx", width / 3)
+                .attr("text-anchor", "start")
+                .style("fill", "white")
+                .text("план виконано < за 90%")
+                .style("text-align", "right")
+                .style("font-size", "1em")
+                .style("fill", "red")
+                .style("width", width);
+
+            svg.append("line")
+                .attr("x1", 0)
+                .attr("x2", width / 3)
+                .attr("y1", y(min))
+                .attr("y2", y(min))
+                .attr("stroke", "red");
+
+
 
             // var focus = svg.append("g")
             //     .attr("class", "focus")
