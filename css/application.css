@@ -535,6 +535,9 @@ tbody {
     width: 100%;
     border-spacing: 10px; }
 
+  #table tbody {
+    cursor: pointer; }
+
   #table table td, th {
     padding: 15px; }
 

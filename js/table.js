@@ -98,5 +98,7 @@ d3.csv(file, function(error, data) {
 
 });
 
+$('div#table').css('cursor','pointer');
+
 
 
