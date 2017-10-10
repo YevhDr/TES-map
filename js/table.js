@@ -5,6 +5,12 @@ d3.csv(file, function(error, data) {
     if (error) throw error;
 
 
+    d3.select("p#date")
+        .append("text")
+        .text("Останнє оновлення: " + data[0].date)
+        .style("color","white");
+
+
     //Responsive size
     // var w = window,
     //     d = document,
@@ -44,16 +50,7 @@ d3.csv(file, function(error, data) {
         .attr("onclick", function(d){ return "getStation('" + d.id +"')" });
 
 
-    // rows.selectAll('td')
-    //     .data(function(d){return d3.values(d)})
-    //     .enter()
-    //     .append('td')
-    //     .filter(function (d, i) { return i === 0 || i === 1 || i === 2;})
-    //     .text(function (d) {
-    //     return d});
-
-
-    table.selectAll("tbody tr")
+     table.selectAll("tbody tr")
         .sort(function(a, b) {
             return d3.ascending(a.plan_percent, b.plan_percent);
         });
@@ -85,6 +82,8 @@ d3.csv(file, function(error, data) {
             return d3.ascending(a.plan_percent, b.plan_percent);
         });
 
+
+
       var nobottom1 = d3.select(d3.select("div#v").node().parentNode).node().parentNode;
    d3.select(nobottom1).attr("class", "no-bottom-border");
 
@@ -95,5 +94,9 @@ d3.csv(file, function(error, data) {
     d3.select("div#p").append("text").text('даних немає');
 
 
+
+
 });
+
+
 

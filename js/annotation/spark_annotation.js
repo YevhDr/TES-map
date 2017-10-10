@@ -134,7 +134,7 @@ var annotation = function () {
                 .attr("dx", width / 3 + 4)
                 .attr("text-anchor", "start")
                 .style("fill", "white")
-                .text("план виконано < за 90%")
+                .text("план виконано менше ніж на 90%")
                 .style("text-align", "right")
                 .style("font-size", "1em")
                 .style("fill", "red")
@@ -149,46 +149,7 @@ var annotation = function () {
 
 
 
-            // var focus = svg.append("g")
-            //     .attr("class", "focus")
-            //     .style("display", "none");
-            //
-            // focus.append("circle")
-            //     .attr("r", 3);
-            //
-            // focus.append("text")
-            //     .attr("x", 9)
-            //     .attr("dy", ".35em")
-            //     .style("font-size", "0.8em")
-            //     .style("fill", "1c2124");
-            //
-            // svg.append("rect")
-            //     .attr("class", "overlay")
-            //     .attr("width", width)
-            //     .attr("height", height)
-            //     .on("mouseover", function () {
-            //         focus.style("display", null);
-            //     })
-            //     .on("mouseout", function () {
-            //         focus.style("display", "none");
-            //     })
-            //     .on("mousemove", mousemove);
-            //
-            // function mousemove() {
-            //     var x0 = x.invert(d3.mouse(this)[0]),
-            //         i = bisectDate(data, x0, 1),
-            //         d0 = data[i - 1],
-            //         d1 = data[i],
-            //         d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-            //     focus.attr("transform", "translate(" + x(d.date) + "," + y(d.plan_percent) + ")");
-            //     focus.select("text").text(formatCurrency(d.plan_percent) + " %");
-            // }
 
-
-            // svg.append('path')
-            //     .datum(data)
-            //     .attr('class', 'sparkline')
-            //     .attr('d', line);
 
 
         });
