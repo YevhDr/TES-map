@@ -618,5 +618,8 @@ tbody {
   align-content: center;
   border-bottom: none !important;
   font-style: italic; }
+  @media (max-width: 480px) {
+    .annotate {
+      margin-left: 2%; } }
 
 /*# sourceMappingURL=application.css.map */

@@ -69,3 +69,7 @@ var baseLayers = {
 var overlays = {
     "Cities": cities
 };
+
+$('#map').css('cursor','crosshair-cursor-enabled');
+
+$(".leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").removeClass();

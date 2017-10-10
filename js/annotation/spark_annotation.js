@@ -147,11 +147,6 @@ var annotation = function () {
                 .attr("y2", y(min))
                 .attr("stroke", "red");
 
-
-
-
-
-
         });
 
     }
