@@ -2,7 +2,7 @@ var spark = function () {
 
     var width = 120;
     var height = 30;
-    var margin = {top: 10, bottom: 0, left:0, right:0};
+    var margin = {top: 0, bottom: 0, left:0, right:0};
 
     function chart(selection) {
 
