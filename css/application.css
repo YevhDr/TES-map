@@ -429,9 +429,24 @@ p span {
 tbody {
   color: white; }
 
-#table table tr.no-bottom-border {
-  border-bottom-color: #1c2124; }
+.no-bottom-border {
+  border-bottom: 0 !important;
+  border-top: 0 !important; }
 
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+  border-top: none !important; }
+
+thead > tr > th {
+  text-align: center !important; }
+
+td:nth-child(2) {
+  text-align: center; }
+
+тАЛ,
 #last {
   padding-bottom: 20px; }
 
@@ -464,7 +479,7 @@ tbody {
     overflow: auto;
     height: 100vh; }
 
-  #temporary {
+  .temporary {
     width: 100%;
     padding-left: 5%;
     font-size: 0.8em; }
@@ -513,7 +528,7 @@ tbody {
     line-height: 1.5em;
     font-weight: bold; }
 
-  #temporary {
+  .temporary {
     font-size: 1em; }
 
   .container {
@@ -528,7 +543,7 @@ tbody {
     max-width: 90%; }
 
   #table table {
-    table-layout: inherit;
+    table-layout: auto;
     color: white;
     font-size: 1.6em;
     margin-right: 5%;
@@ -544,11 +559,6 @@ tbody {
   .main {
     width: 100%;
     font-size: 1.3em; } }
-#v, #x {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-
 .sparkline {
   fill: none;
   stroke: #ffffff;
@@ -560,12 +570,12 @@ tbody {
   stroke-width: 1px; }
 
 thead {
-  align-content: center;
+  text-align: center;
   font-size: 1em;
   color: white; }
 
 #table table tr {
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 0.5px solid #f2f2f2; }
 
 #table table table td {
   text-align: left; }

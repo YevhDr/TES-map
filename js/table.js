@@ -84,7 +84,9 @@ d3.csv(file, function(error, data) {
 
 
 
-      var nobottom1 = d3.select(d3.select("div#v").node().parentNode).node().parentNode;
+
+
+   var nobottom1 = d3.select(d3.select("div#v").node().parentNode).node().parentNode;
    d3.select(nobottom1).attr("class", "no-bottom-border");
 
     var nobottom2 = d3.select(d3.select("div#x").node().parentNode).node().parentNode;

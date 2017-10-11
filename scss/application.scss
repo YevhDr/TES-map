@@ -228,9 +228,28 @@ tbody {
     color:white;
 }
 
-#table table tr.no-bottom-border {
-      border-bottom-color: #1c2124;
+.no-bottom-border {
+  border-bottom: 0!important;
+  border-top: 0!important;
 }
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+  border-top: none!important;
+
+}
+
+thead>tr>th {
+  text-align: center!important;
+}
+
+td:nth-child(2) {
+  text-align: center;
+
+}​,
 
 #last {
     padding-bottom: 20px;
@@ -281,7 +300,7 @@ tbody {
     height:100vh;
   }
 
-  #temporary {
+  .temporary {
     width: 100%;
     padding-left: 5%;
     font-size: 0.8em;
@@ -373,7 +392,7 @@ tbody {
     //overflow:auto;
   }
 
-  #temporary {
+  .temporary {
     font-size: 1em;}
 
   .container {
@@ -392,7 +411,7 @@ tbody {
   }
 
   #table table {
-    table-layout: inherit;
+    table-layout: auto;
     color: white;
     font-size: 1.6em;
     margin-right: 5%;
@@ -416,13 +435,6 @@ tbody {
 
 }
 
-
-#v, #x{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
- }
-
 .sparkline {
   fill: none;
   stroke: #ffffff;
@@ -438,7 +450,7 @@ tbody {
 
 
 thead {
-  align-content: center;
+  text-align: center;
   font-size: 1em;
   color:white;
 
@@ -446,7 +458,7 @@ thead {
 
 
 #table table tr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.5px solid #f2f2f2;
 }
 
 
