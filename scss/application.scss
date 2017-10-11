@@ -189,6 +189,18 @@ h3 {
 
 }
 
+.sticky {
+  @media (max-width:768px) {
+    position: relative;
+    top: 50px;
+  }
+
+@media (min-width:769px) {
+  position: sticky;
+  top: 50px;
+}
+}
+
 
 p {
   font-size: 1.5em;
@@ -557,7 +569,3 @@ tbody {
   }
 }
 
-.sticky {
-  position: sticky;
-  top: 50px;
-}
