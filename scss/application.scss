@@ -456,12 +456,25 @@ thead {
 
 }
 
+#table th:nth-child(1){
+  text-align: left!important;
+}
+
+#table th:nth-child(3){
+  text-align: right!important;
+}
 
 #table table tr {
   border-bottom: 0.5px solid #f2f2f2;
 }
 
-
+#table td:nth-child(1),
+#table td:nth-child(2) {
+  width: 30%;
+}
+#table td:nth-child(3) {
+  width: 40%;
+}
 
 #table table table td {
   text-align: left;
@@ -471,6 +484,10 @@ thead {
   text-align: center;
 
 }​,
+
+ #table table  td:nth-child(3) {
+   text-align: center;
+ }​,
 
 
  #table table tr:hover {
@@ -538,4 +555,9 @@ tbody {
 
 
   }
+}
+
+.sticky {
+  position: sticky;
+  top: 50px;
 }

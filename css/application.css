@@ -574,13 +574,30 @@ thead {
   font-size: 1em;
   color: white; }
 
+#table th:nth-child(1) {
+  text-align: left !important; }
+
+#table th:nth-child(3) {
+  text-align: right !important; }
+
 #table table tr {
   border-bottom: 0.5px solid #f2f2f2; }
+
+#table td:nth-child(1),
+#table td:nth-child(2) {
+  width: 30%; }
+
+#table td:nth-child(3) {
+  width: 40%; }
 
 #table table table td {
   text-align: left; }
 
 #table table td:nth-child(2) {
+  text-align: center; }
+
+тАЛ,
+#table table td:nth-child(3) {
   text-align: center; }
 
 тАЛ,
@@ -634,5 +651,9 @@ tbody {
   @media (max-width: 480px) {
     .annotate {
       margin-left: 2%; } }
+
+.sticky {
+  position: sticky;
+  top: 50px; }
 
 /*# sourceMappingURL=application.css.map */

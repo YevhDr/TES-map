@@ -18,7 +18,7 @@
          d3.select("div.text").append("p").attr("class","temporary")
              .html("<b>газове вугілля –  13,1 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
              .attr("font-size", "0.6vh");
-         d3.select("div#table").style("overflow", "auto").style("height", "300px");
+         d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
      }
 
         if (stat === 'b') {
@@ -39,7 +39,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>газове вугілля –  6,0 тис. тонн<span> щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if (stat === 'c') {
@@ -60,7 +60,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>антрацит – 1,7 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
 
         }
 
@@ -82,7 +82,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>газове вугілля –  5,3 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
              .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat === 'g') {
@@ -103,7 +103,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b> газове вугілля – 1,0 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat ==='i') {
@@ -124,7 +124,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>антрацит – 1,0 тис. тонн <span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat === 'j') {
@@ -145,7 +145,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>пісне вугілля –  4,5 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat === 'k') {
@@ -166,7 +166,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>газове вугілля –  8,9 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat === 'l') {
@@ -187,7 +187,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>газове вугілля –  5,4 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat ==='m') {
@@ -208,7 +208,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>антрацит –  5,8 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat === 'n') {
@@ -229,7 +229,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>антрацит – 4,7 тис. тонн <span> –  щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat === 'o') {
@@ -250,7 +250,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>антрацит – 4,4 тис. тонн<span> –  щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat === 'q') {
@@ -271,7 +271,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>антрацит – 0,6 тис. тонн <span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat === 'r') {
@@ -292,7 +292,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>антрацит – 4,9 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat === 's') {
@@ -313,7 +313,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>газову вугілля – 1,5 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat === 't') {
@@ -334,7 +334,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>антрацит – 1,6 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
         if(stat === 'y') {
@@ -355,7 +355,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>газове вугілля – 1,2 тис. тонн<span> – щоденні витрати у січні 2016</span></b>")
             .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
      if(stat === 'v') {
@@ -376,7 +376,7 @@
          d3.select("div.text").append("p").attr("class","temporary")
              .html("<b>антрацит –  3,8 тис. тонн<span> – щоденні витрати у січні 2016</span></b>")
              .attr("font-size", "0.6vh");
-         d3.select("div#table").style("overflow", "auto").style("height", "300px");
+         d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
      }
 
      if(stat === 'x') {
@@ -397,7 +397,7 @@
          d3.select("div.text").append("p").attr("class","temporary")
              .html("<b>антрацит – 0,7 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
              .attr("font-size", "0.6vh");
-         d3.select("div#table").style("overflow", "auto").style("height", "300px");
+         d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
      }
 
      if(stat === 'f') {
@@ -418,7 +418,7 @@
          d3.select("div.text").append("p").attr("class","temporary")
              .html("<b>газове вугілля – 0,5 тис. тонн <span>– щоденні витрати у січні 2016</span></b>")
              .attr("font-size", "0.6vh");
-         d3.select("div#table").style("overflow-y", "auto").style("height", "300px");
+         d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
      }
 
         if(stat === 'z') {
@@ -439,7 +439,7 @@
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>газове вугілля –  3,2 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
                 .attr("font-size", "0.6vh");
-            d3.select("div#table").style("overflow", "auto").style("height", "300px");
+            d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
 
         }
 
