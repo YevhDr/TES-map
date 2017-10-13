@@ -51,7 +51,10 @@ var cities = L.layerGroup();
 ///////////////////////////////////
 
 var mbAttr = "&copy;<a href='http://www.openstreetmap.org/copyright'>mapbox</a>";
-mbUrl = 'https://api.mapbox.com/styles/v1/evgeshadrozdova/cj7ive7fj5qfw2sr0sa76a748/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZXZnZXNoYWRyb3pkb3ZhIiwiYSI6ImNqMjZuaGpkYTAwMXAzMm5zdGVvZ2c0OHYifQ.s8MMs2wW15ZyUfDhTS_cdQ';
+// mbUrl = 'https://api.mapbox.com/styles/v1/evgeshadrozdova/cj7ive7fj5qfw2sr0sa76a748/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZXZnZXNoYWRyb3pkb3ZhIiwiYSI6ImNqMjZuaGpkYTAwMXAzMm5zdGVvZ2c0OHYifQ.s8MMs2wW15ZyUfDhTS_cdQ';
+
+mbUrl = 'https://api.mapbox.com/styles/v1/evgeshadrozdova/cj8q5dbpxaa2g2rqni1psrh7g/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZXZnZXNoYWRyb3pkb3ZhIiwiYSI6ImNqMjZuaGpkYTAwMXAzMm5zdGVvZ2c0OHYifQ.s8MMs2wW15ZyUfDhTS_cdQ';
+
 
 var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr});
 
