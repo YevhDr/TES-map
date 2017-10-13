@@ -27,7 +27,7 @@ d3.json(file, function(error, data) {
 
 // Add the stock name cell.
     rows.append('td')
-        .text("динаміка виконання плану за останні 100 робочих днів")
+        .text("на графіках динаміка виконання плану за останні 100 робочих днів")
         .attr('margin-right', "10px");
 
         // .text(function (d) {

@@ -74,9 +74,9 @@ var annotation = function () {
                 .attr("transform", "translate(" + (width - 80) + "," + y(data[data.length-1].plan_percent) + ")")
                 .attr("dy", "1em")
                 .attr("text-anchor", "start")
-                .style("fill", "white")
+                .style("fill", "grey")
                 .text(function (d) {
-                    return d.coal_type + ", " + plan_percent + "% — "
+                    return d.coal_type + ", " + plan_percent + "%"
                 })
                 .style("font-size", "1em")
                 .style("padding-top", "5px")
@@ -85,12 +85,11 @@ var annotation = function () {
             svg.append("text")
                 .data(data)
                 .attr("transform", "translate(" + (width - 80) + "," + y(data[data.length-1].plan_percent) + ")")
-                .attr("dy", "2em")
+                .attr("dy", "2.5em")
                 .attr("text-anchor", "start")
-                .style("fill", "white")
-                .text("поточне виконанння плану")
+                .style("fill", "grey")
+                .text("(поточне виконанння плану)")
                 .style("font-size", "1em")
-                .style("padding-top", "5px")
                 .style("width", width);
 
             var parent_data = d3.select(this.parentNode).datum();
@@ -135,6 +134,7 @@ var annotation = function () {
                 .attr("text-anchor", "start")
                 .style("fill", "white")
                 .text("план виконано менше ніж на 90%")
+                .style('font-style', "italic")
                 .style("text-align", "right")
                 .style("font-size", "1em")
                 .style("fill", "red")
