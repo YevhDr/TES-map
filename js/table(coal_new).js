@@ -1,4 +1,4 @@
-var file = "data/coal_new.json";
+var file = "coal_output/data.json";
 
 d3.json(file, function (error, data) {
     if (error) throw error;
