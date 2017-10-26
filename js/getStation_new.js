@@ -23,11 +23,11 @@ var getStation = function (stat) {
 /* =======================================
 Назва станції
 ========================================== */
-                d3.select("div.text").append("p").attr("class", "temporary")
-                    .html("<b>" + d.station + "</b>")
-                    .style("font-size", "1.5em")
-                    .style("margin-bottom", "20px")
-                ;
+                // d3.select("div.text").append("p").attr("class", "temporary")
+                //     .html("<b>" + d.station + "</b>")
+                //     .style("font-size", "1.5em")
+                //     .style("margin-bottom", "20px")
+                // ;
 
 
 /* =======================================
@@ -40,7 +40,7 @@ var getStation = function (stat) {
  Максимальне навантаження  ШАПКА
 ========================================== */
                 if (d.max_a >= 0 || d.max_g >= 0 || d.max_p >= 0) {
-                    d3.select("div.text").append("p").attr("class", "temporary")
+                    d3.select("div.text").append("p").attr("class", "temporary m-0 p-0")
                         .html("<b>Максимальне  завантаження складів:</b>")
                         .style("margin-top", "20px")
                         // .style("color", "#f9fa7f")

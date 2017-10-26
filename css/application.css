@@ -495,6 +495,9 @@ td:nth-child(2) {
     line-height: 0.8em;
     padding-bottom: none; }
 
+  p.temporary {
+    margin: 0 0 0 0; }
+
   .container {
     margin-left: 0;
     padding-left: 0; }
