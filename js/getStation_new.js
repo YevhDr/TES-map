@@ -24,7 +24,10 @@ var getStation = function (stat) {
 Назва станції
 ========================================== */
                 d3.select("div.text").append("p").attr("class", "temporary")
-                    .html("<b>" + d.station + "</b>").style("font-size", "1.5em");
+                    .html("<b>" + d.station + "</b>")
+                    .style("font-size", "1.5em")
+                    .style("margin-bottom", "20px")
+                ;
 
 
 /* =======================================
