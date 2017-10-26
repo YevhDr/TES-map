@@ -92,7 +92,7 @@ var getStation = function (stat) {
 
                 if (d.min_g > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("</br><span>газове – <b>" + d.min_g + " тис. тонн </span></b>");
+                        .html("<span>газове – <b>" + d.min_g + " тис. тонн </span></b>");
                 } else if (d.min_g == 0){
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>газове –<b> немає даних </span></b>");
