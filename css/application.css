@@ -402,7 +402,7 @@ h3 {
 @media (max-width: 768px) {
   .sticky {
     position: relative;
-    top: 50px; } }
+    top: 20px; } }
 @media (min-width: 769px) {
   .sticky {
     position: sticky;
@@ -491,7 +491,9 @@ td:nth-child(2) {
   .temporary {
     width: 100%;
     padding-left: 5%;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    line-height: 0.8em;
+    padding-bottom: none; }
 
   .container {
     margin-left: 0;
