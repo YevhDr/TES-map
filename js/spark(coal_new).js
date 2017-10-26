@@ -98,8 +98,10 @@ var spark = function () {
                 .data([test, test2])
                 .enter()
                 .append("path")
-                .attr("class", function (d) {
-                    return "line " + d;
+                .attr("class", function (d, i) {
+                    return i==0 ? "line below" : "line above";
+
+                    // return "line " + d;
                 })
                 .attr("clip-path", function (d) {
                     return "url(#clip-" + d + ")"

@@ -527,9 +527,13 @@ tbody {
   stroke-width: 1px;
 }
 
-.line.abovea, .line.aboveb, .line.abovec, .line.abovez, .line.abovee, .line.abovev, .line.aboveg,
-.line.abovei,.line.abovej,.line.abovek, .line.abovel, .line.abovem, .line.aboven, .line.abover, .line.aboveq,
-.line.abovep, .line.aboveo, .line.abovet, .line.abovex, .line.abovef, .line.abovey, .line.aboves {
+.line.above, .line.above
+
+//.line.abovea, .line.aboveb, .line.abovec, .line.abovez, .line.abovee, .line.abovev, .line.aboveg,
+//.line.abovei,.line.abovej,.line.abovek, .line.abovel, .line.abovem, .line.aboven, .line.abover, .line.aboveq,
+//.line.abovep, .line.aboveo, .line.abovet, .line.abovex, .line.abovef, .line.abovey, .line.aboves
+
+{
   fill: none;
   stroke: #ffffff;
   stroke-width: 1px;

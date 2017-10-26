@@ -74,22 +74,51 @@ d3.json(file, function (error, data) {
         .sort(function (a, b) {
             return d3.ascending(a.plan_percent, b.plan_percent) ||
                 d3.ascending(a.mentions[0].coal_type, b.mentions[0].coal_type)
+
+            // return d3.ascending(a.station, b.station)
         });
 
+/*Trying to find dublicate station name
+=====================================*/
+// VAR 1
+    rows.each(function() {
+        d3.select(this);
 
 
-    //remove value of selected
-    d3.select("td#y").text("");
-    d3.select('td#f').text("");
+                var prev = this.previousElementSibling;
+                var next = this.nextElementSibling;
+                if (prev != null) {
+                    var currentValue = d3.select(this.firstElementChild).datum();
+                    var currentStation = currentValue.station;
+                    var prevValue = d3.select(this.previousElementSibling.firstElementChild).datum();
+                    var prevStation = prevValue.station;
+
+
+                    if (currentStation == prevStation) {
+                        console.log("true");
+                        d3.select(this.previousElementSibling)
+                            .attr("class", "no-bottom-border");
+                        d3.select(this.firstElementChild)
+                            .text("");
+
+
+                    }
+                }
+            });
+
+
+    // //remove value of selected
+    // d3.select("td#y").text("");
+    // d3.select('td#f').text("");
 
 
 
-    // remove bottom-border of the rows
-    d3.select("tr#v")
-        .attr("class", "no-bottom-border");
-
-    d3.select("tr#x")
-        .attr("class", "no-bottom-border");
+    // // remove bottom-border of the rows
+    // d3.select("tr#v")
+    //     .attr("class", "no-bottom-border");
+    //
+    // d3.select("tr#x")
+    //     .attr("class", "no-bottom-border");
 
 
 
