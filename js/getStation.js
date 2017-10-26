@@ -10,7 +10,7 @@ var getStation = function(stat) {
          }).addTo(cities);
          d3.selectAll("p.temporary").remove();
          d3.select("div.text").append("p").attr("class","temporary")
-             .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>");
+             .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціонування (газове вугілля)</span></b>");
          d3.select("div.text").append("p").attr("class","temporary")
              .html("<b>610 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>");
          d3.select("div.text").append("p").attr("class","temporary")
@@ -31,7 +31,7 @@ var getStation = function(stat) {
             }).addTo(cities);
             d3.selectAll("p.temporary").remove();
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>");
+                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціонування (газове вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>325 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -54,7 +54,7 @@ var getStation = function(stat) {
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>немає даних <span> – максимальне  завантаження складів</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>немає даних <span> –  мінімальний залишок вугілля для функціовання</span></b>");
+                .html("<b>немає даних <span> –  мінімальний залишок вугілля для функціонування</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>ТОВ «Євро– Реконструкція», Анатолій Шкрібляк  <span>– власник</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -74,7 +74,7 @@ var getStation = function(stat) {
             }).addTo(cities);
             d3.selectAll("p.temporary").remove();
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>");
+                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціонування (газове вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>310 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -97,7 +97,7 @@ var getStation = function(stat) {
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>немає даних <span>– максимальне  завантаження складів </span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
-                .html( "<b>немає даних <span>–  мінімальний залишок вугілля для функціовання </span></b>");
+                .html( "<b>немає даних <span>–  мінімальний залишок вугілля для функціонування </span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>«УкрІнтерЕнерго», держава <span>– власник</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -118,7 +118,7 @@ var getStation = function(stat) {
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>немає даних <span>– максимальне  завантаження складів </span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>немає даних <span>–мінімальний залишок вугілля для функціовання </span></b>");
+                .html("<b>немає даних <span>–мінімальний залишок вугілля для функціонування </span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>«Contour Global», Нью-Йорк; Краматорська міська рада <span>–власник</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -137,7 +137,7 @@ var getStation = function(stat) {
         }).addTo(cities);
             d3.selectAll("p.temporary").remove();
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>120 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (пісне вугілля)</span></b>");
+                .html("<b>120 тис. тонн<span>–  мінімальний залишок вугілля для функціонування (пісне вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>550 тис. тонн<span>– максимальне  завантаження складів (пісне вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -158,7 +158,7 @@ var getStation = function(stat) {
         }).addTo(cities);
             d3.selectAll("p.temporary").remove();
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>");
+                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціонування (газове вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>583 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -179,7 +179,7 @@ var getStation = function(stat) {
         }).addTo(cities);
             d3.selectAll("p.temporary").remove();
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>");
+                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціонування (газове вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>488 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -200,7 +200,7 @@ var getStation = function(stat) {
         }).addTo(cities);
             d3.selectAll("p.temporary").remove();
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>50 тис. тонн<span>– мінімальний залишок вугілля для функціовання (антрацит)</span></b>");
+                .html("<b>50 тис. тонн<span>– мінімальний залишок вугілля для функціонування (антрацит)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>820 тис. тонн<span> – максимальне завантаження складів (антрацит)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -221,9 +221,13 @@ var getStation = function(stat) {
         }).addTo(cities);
             d3.selectAll("p.temporary").remove();
             d3.select("div.text").append("p").attr("class","temporary")
-            .html("<b>80 тис. тонн  <span>–  мінімальний залишок вугілля для функціовання (антрацит)</span></b>" );
+                .html("<b>80 тис. тонн  <span>–  мінімальний залишок вугілля для функціонування (антрацит)</span></b>" );
+            d3.select("div.text").append("p").attr("class","temporary")
+                .html("<b>40 тис. тонн  <span>–  мінімальний залишок вугілля для функціонування (газове)</span></b>" );
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>410 тис. тонн <span>–  максимальне завантаження складів (антрацит)</span></b>" );
+            d3.select("div.text").append("p").attr("class","temporary")
+                .html("<b>205 тис. тонн<span>–  максимальне завантаження складів (газове)</span></b>" );
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>ДТЕК, Рінат Ахметов <span>–  власник</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -242,7 +246,7 @@ var getStation = function(stat) {
         }).addTo(cities);
             d3.selectAll("p.temporary").remove();
             d3.select("div.text").append("p").attr("class","temporary")
-            .html("<b>40 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (антрацит)</span></b>");
+            .html("<b>40 тис. тонн<span>–  мінімальний залишок вугілля для функціонування (антрацит)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>350 тис. тонн<span>–  максимальне завантаження складів (антрацит)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -265,7 +269,7 @@ var getStation = function(stat) {
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>немає даних <span>– максимальне  завантаження складів </span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>немає даних <span>–  мінімальний залишок вугілля для функціовання </span></b>");
+                .html("<b>немає даних <span>–  мінімальний залишок вугілля для функціонування </span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>ДВ «Нафтогазовидобувна компанія», Павло Фукс <span>– власник</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -284,7 +288,7 @@ var getStation = function(stat) {
         }).addTo(cities);
             d3.selectAll("p.temporary").remove();
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (антрацит)</span></b>");
+                .html("<b>100 тис. тонн<span>–  мінімальний залишок вугілля для функціонування (антрацит)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>282 тис. тонн<span>–  максимальне завантаження складів (антрацит)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -307,7 +311,7 @@ var getStation = function(stat) {
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>немає даних <span>– максимальне  завантаження складів </span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>немає даних <span>–  мінімальний залишок вугілля для функціовання </span></b>");
+                .html("<b>немає даних <span>–  мінімальний залишок вугілля для функціонування </span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>ПАТ «Черкаське хімволокно», Анатолій Шкрібляк <span>– власник</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -328,7 +332,7 @@ var getStation = function(stat) {
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>немає даних <span>– максимальне  завантаження складів </span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
-                .html("<b>немає даних <span>–  мінімальний залишок вугілля для функціовання </span></b>");
+                .html("<b>немає даних <span>–  мінімальний залишок вугілля для функціонування </span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b> Чернігівська міська рада, в оренді ТОВ «ЧФірма «ТехНова», Анатолій Шкрібляк <span>– власник</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -347,7 +351,7 @@ var getStation = function(stat) {
         }).addTo(cities);
             d3.selectAll("p.temporary").remove();
             d3.select("div.text").append("p").attr("class","temporary")
-            .html("<b>немає даних<span>– мінімальний залишок вугілля для функціовання (антрацит)</span></b>");
+            .html("<b>немає даних<span>– мінімальний залишок вугілля для функціонування (антрацит)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>немає даних<span>– максимальне завантаження складів (антрацит)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
@@ -368,7 +372,7 @@ var getStation = function(stat) {
          }).addTo(cities);
          d3.selectAll("p.temporary").remove();
          d3.select("div.text").append("p").attr("class","temporary")
-             .html("<b>80 тис. тонн<span>– мінімальний залишок вугілля для функціовання (антрацит)</span></b>");
+             .html("<b>80 тис. тонн<span>– мінімальний залишок вугілля для функціонування (антрацит)</span></b>");
          d3.select("div.text").append("p").attr("class","temporary")
              .html("<b>445 тис. тонн<span>– максимальне завантаження складів (антрацит)</span></b>");
          d3.select("div.text").append("p").attr("class","temporary")
@@ -391,7 +395,7 @@ var getStation = function(stat) {
          }).addTo(cities);
          d3.selectAll("p.temporary").remove();
          d3.select("div.text").append("p").attr("class","temporary")
-             .html("<b>немає даних –  мінімальний залишок вугілля для функціовання</span></b>");
+             .html("<b>немає даних –  мінімальний залишок вугілля для функціонування</span></b>");
          d3.select("div.text").append("p").attr("class","temporary")
              .html("<b>антрацит –  90 тис. тонн <span>– максимальне  завантаження складів</span></b>");
          d3.select("div.text").append("p").attr("class","temporary")
@@ -414,7 +418,7 @@ var getStation = function(stat) {
          }).addTo(cities);
          d3.selectAll("p.temporary").remove();
          d3.select("div.text").append("p").attr("class","temporary")
-             .html("<b>немає даних –  мінімальний залишок вугілля для функціовання</span></b>");
+             .html("<b>немає даних –  мінімальний залишок вугілля для функціонування</span></b>");
          d3.select("div.text").append("p").attr("class","temporary")
              .html("<b>антрацит –  90 тис. тонн <span>– максимальне  завантаження складів</span></b>");
          d3.select("div.text").append("p").attr("class","temporary")
@@ -435,7 +439,7 @@ var getStation = function(stat) {
             }).addTo(cities);
             d3.selectAll("p.temporary").remove();
             d3.select("div.text").append("p").attr("class","temporary")
-             .html("<b>40 тис. тонн<span>–  мінімальний залишок вугілля для функціовання (газове вугілля)</span></b>");
+             .html("<b>40 тис. тонн<span>–  мінімальний залишок вугілля для функціонування (газове вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
                 .html("<b>220 тис. тонн<span>– максимальне  завантаження складів (газове вугілля)</span></b>");
             d3.select("div.text").append("p").attr("class","temporary")
