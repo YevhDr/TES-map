@@ -55,6 +55,8 @@ var getStation = function (stat) {
                         .html("<span>антрацит <b>– немає даних </span></b>");
                 }
 
+
+
                 if (d.max_g > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>газове – <b>" + d.max_g + " тис. тонн </span></b>");
@@ -62,6 +64,8 @@ var getStation = function (stat) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>газове – <b>немає даних </span></b>");
                 }
+
+
 
                 if (d.max_p > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
@@ -74,7 +78,7 @@ var getStation = function (stat) {
 /* =======================================
  Мінімальне навантаження по типам вугілля
 ========================================== */
-                if (d.min_a >= 0 || d.min_g >= 0 || d.min__p >= 0) {
+                if (d.min_a >= 0 || d.min_g >= 0 || d.min_p >= 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<b>Мінімальний залишок вугілля для функціонування:</b>")
                         .style("margin-top", "20px");
