@@ -1,6 +1,6 @@
 var getStation = function(stat) {
 
-     if (stat === 'a_a' || stat === 'a_g' ) {
+     if (stat === 'a_a' ||  stat === 'a_g' || stat === 'a_p') {
          d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
          d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
          map.setView(new L.LatLng(49.207883, 24.666714), 6);
@@ -21,7 +21,7 @@ var getStation = function(stat) {
          d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
      }
 
-        if (stat === 'b_a' || stat === 'b_g' ) {
+        if (stat === 'b_a' || stat === 'b_g' || stat === 'b_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.463149, 38.202597), 6);
@@ -42,7 +42,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if (stat === 'c_a' || stat === 'c_g') {
+        if (stat === 'c_a' || stat === 'c_g' || stat === 'c_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(50.446638, 30.639666), 6);
@@ -64,7 +64,7 @@ var getStation = function(stat) {
 
         }
 
-        if(stat ==='e_a' || stat === 'e_g') {
+        if(stat ==='e_a' || stat === 'e_g'|| stat === 'e_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(47.5086, 34.6256), 6);
@@ -85,7 +85,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if(stat === 'g_a' || stat === 'g_g') {
+        if(stat === 'g_a' || stat === 'g_g'|| stat === 'g_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(49.071129,24.319353), 6);
@@ -106,7 +106,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if(stat ==='i_a' || stat === 'i_g') {
+        if(stat ==='i_a' || stat === 'i_g'|| stat === 'i_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.747775,37.573545), 6);
@@ -148,7 +148,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if(stat === 'k_a' || stat === 'k_g') {
+        if(stat === 'k_a' || stat === 'k_g'|| stat === 'k_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(47.99459,37.237741), 6);
@@ -169,7 +169,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if(stat === 'l_a'|| stat === 'l_g') {
+        if(stat === 'l_a'|| stat === 'l_g'|| stat === 'l_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.706825,29.220188), 6);
@@ -190,7 +190,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if(stat ==='m_a'|| stat === 'm_g') {
+        if(stat ==='m_a'|| stat === 'm_g'|| stat === 'm_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.748741,39.260899), 6);
@@ -211,7 +211,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if(stat === 'n_a' || stat === 'n_g') {
+        if(stat === 'n_a' || stat === 'n_g'|| stat === 'n_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.403499,35.118088), 6);
@@ -232,7 +232,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if(stat === 'o_a'|| stat === 'o_g' ) {
+        if(stat === 'o_a'|| stat === 'o_g' || stat === 'o_p' ) {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(48.871596,37.764766), 6);
@@ -253,7 +253,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if(stat === 'q_a' || stat === 'q_g') {
+        if(stat === 'q_a' || stat === 'q_g'|| stat === 'q_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(49.797068,36.590277), 6);
@@ -274,7 +274,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if(stat === 'r_a'|| stat === 'r_g') {
+        if(stat === 'r_a'|| stat === 'r_g'|| stat === 'r_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(50.134847,30.745404), 6);
@@ -295,7 +295,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if(stat === 's_a'|| stat === 's_g') {
+        if(stat === 's_a'|| stat === 's_g'|| stat === 's_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(49.386221,32.060906), 6);
@@ -316,7 +316,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-        if(stat === 't_a'|| stat === 't_g') {
+        if(stat === 't_a'|| stat === 't_g' || stat === 't_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(51.455278,31.262222), 6);
@@ -358,7 +358,7 @@ var getStation = function(stat) {
             d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
         }
 
-     if(stat === 'v_a'|| stat === 'v_g') {
+     if(stat === 'v_a'|| stat === 'v_g'|| stat === 'v_p') {
          d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
          d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
          map.setView(new L.LatLng(49.5865,36.52525), 6);
@@ -374,12 +374,14 @@ var getStation = function(stat) {
          d3.select("div.text").append("p").attr("class","temporary")
              .html("<b>ПАТ «Центренерго», держава <span>– власник</span></b>");
          d3.select("div.text").append("p").attr("class","temporary")
-             .html("<b>антрацит –  3,8 тис. тонн<span> – щоденні витрати у січні 2016</span></b>")
+             .html("<b>антрацит –  3,8 тис. тонн<span> – щоденні витрати у січні 2016</span></b>");
+         d3.select("div.text").append("p").attr("class","temporary")
+             .html("<b>газове вугілля – 1,2 тис. тонн<span> – щоденні витрати у січні 2016</span></b>")
              .attr("font-size", "0.6vh");
          d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
      }
 
-     if(stat === 'x_a'|| stat === 'x_g') {
+     if(stat === 'x_a'|| stat === 'x_g' || stat === 'x_p') {
          d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
          d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
          map.setView(new L.LatLng(48.480556,38.289722), 6);
@@ -395,7 +397,9 @@ var getStation = function(stat) {
          d3.select("div.text").append("p").attr("class","temporary")
              .html("<b>ДТЕК, Рінат Ахметов <span>– власник</span></b>");
          d3.select("div.text").append("p").attr("class","temporary")
-             .html("<b>антрацит – 0,7 тис. тонн<span>– щоденні витрати у січні 2016</span></b>")
+             .html("<b>антрацит – 0,7 тис. тонн<span>– щоденні витрати у січні 2016</span></b>");
+         d3.select("div.text").append("p").attr("class","temporary")
+             .html("<b>газове вугілля – 0,5 тис. тонн <span>– щоденні витрати у січні 2016</span></b>")
              .attr("font-size", "0.6vh");
          d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
      }
@@ -421,7 +425,7 @@ var getStation = function(stat) {
          d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
      }
 
-        if(stat === 'z_a'|| stat === 'z_g') {
+        if(stat === 'z_a'|| stat === 'z_g'|| stat === 'x_p') {
             d3.selectAll("img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive").remove();
             d3.selectAll("div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-right").remove();
             map.setView(new L.LatLng(50.219662,24.373773), 6);
