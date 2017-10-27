@@ -39,7 +39,7 @@ var getStation = function (stat) {
 /* =======================================
  Максимальне навантаження  ШАПКА
 ========================================== */
-                if (d.max_a >= 0 || d.max_g >= 0 || d.max_p >= 0) {
+                if (d.max_a > 0 || d.max_g > 0 || d.max_p > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary m-0 p-0")
                         .html("<b>Максимальне  завантаження складів:</b>")
                         .style("margin-top", "20px")
@@ -53,35 +53,38 @@ var getStation = function (stat) {
                 if (d.max_a > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>антрацит – <b>" + d.max_a + " тис. тонн </span></b>");
-                } else if (d.max_a == 0){
-                    d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("<span>антрацит <b>– немає даних </span></b>");
                 }
+                // else if (d.max_a == 0){
+                //     d3.select("div.text").append("p").attr("class", "temporary")
+                //         .html("<span>антрацит <b>– немає даних </span></b>");
+                // }
 
 
 
                 if (d.max_g > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>газове – <b>" + d.max_g + " тис. тонн </span></b>");
-                } else if (d.max_g == 0){
-                    d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("<span>газове – <b>немає даних </span></b>");
                 }
+                // else if (d.max_g == 0){
+                //     d3.select("div.text").append("p").attr("class", "temporary")
+                //         .html("<span>газове – <b>немає даних </span></b>");
+                // }
 
 
 
                 if (d.max_p > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>пісне – <b>" + d.max_p + " тис. тонн </span></b>");
-                } else if (d.max_p == 0){
-                    d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("<span>пісне – <b>немає даних </span> </b>");
                 }
+                // else if (d.max_p == 0){
+                //     d3.select("div.text").append("p").attr("class", "temporary")
+                //         .html("<span>пісне – <b>немає даних </span> </b>");
+                // }
 
 /* =======================================
  Мінімальне навантаження по типам вугілля
 ========================================== */
-                if (d.min_a >= 0 || d.min_g >= 0 || d.min_p >= 0) {
+                if (d.min_a > 0 || d.min_g > 0 || d.min_p > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<b>Мінімальний залишок вугілля для функціонування:</b>")
                         .style("margin-top", "20px");
@@ -92,26 +95,29 @@ var getStation = function (stat) {
                 if (d.min_a > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>антрацит – <b>" + d.min_a + " тис. тонн </span></b>");
-                } else if (d.min_a == 0){
-                    d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("<span>антрацит – <b>немає даних </span> </b>");
                 }
+                // else if (d.min_a == 0){
+                //     d3.select("div.text").append("p").attr("class", "temporary")
+                //         .html("<span>антрацит – <b>немає даних </span> </b>");
+                // }
 
                 if (d.min_g > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>газове – <b>" + d.min_g + " тис. тонн </span></b>");
-                } else if (d.min_g == 0){
-                    d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("<span>газове –<b> немає даних </span></b>");
                 }
+                // else if (d.min_g == 0){
+                //     d3.select("div.text").append("p").attr("class", "temporary")
+                //         .html("<span>газове –<b> немає даних </span></b>");
+                // }
 
                 if (d.min_p > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>пісне – <b>" + d.min_p + " тис. тонн </span></b>");
-                } else if (d.min_p == 0){
-                    d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("<span>пісне –<b> немає даних </span></b>");
                 }
+                // else if (d.min_p == 0){
+                //     d3.select("div.text").append("p").attr("class", "temporary")
+                //         .html("<span>пісне –<b> немає даних </span></b>");
+                // }
 
 
 
@@ -119,7 +125,7 @@ var getStation = function (stat) {
  /* =======================================
  щоденні витрати у січні 2016 ШАПКА
  ========================================== */
-                if (d.spending_a >= 0 || d.spending_g >= 0 || d.spending_p >= 0) {
+                if (d.spending_a > 0 || d.spending_g > 0 || d.spending_p > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<b>Щоденні витрати у січні 2016 р.:</b>")
                         .style("margin-top", "20px");
@@ -131,10 +137,11 @@ var getStation = function (stat) {
                 if (d.spending_a > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>антрацит – <b>" + d.spending_a + " тис. тонн</span></b>");
-                } else if (d.spending_a == 0) {
-                    d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("<span>антрацит – <b>немає даних</span></b>");
                 }
+                // else if (d.spending_a == 0) {
+                //     d3.select("div.text").append("p").attr("class", "temporary")
+                //         .html("<span>антрацит – <b>немає даних</span></b>");
+                // }
 
 /* ==========================================
 щоденні витрати у січні 2016 (газове)
@@ -142,10 +149,11 @@ var getStation = function (stat) {
                 if (d.spending_g > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>газове – <b>" + d.spending_g + " тис. тонн</span></b>");
-                }else if (d.spending_g == 0) {
-                    d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("<span>газове – <b>немає даних</span></b>");
                 }
+                // else if (d.spending_g == 0) {
+                //     d3.select("div.text").append("p").attr("class", "temporary")
+                //         .html("<span>газове – <b>немає даних</span></b>");
+                // }
 
  /* =========================================
 щоденні витрати у січні 2016 (пісне)
@@ -153,10 +161,11 @@ var getStation = function (stat) {
                 if (d.spending_p > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
                         .html("<span>пісне – <b>" + d.spending_p + " тис. тонн</span></b>");
-                }else if (d.spending_g == 0) {
-                    d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("<span>пісне – <b>немає даних</span></b>");
                 }
+                // else if (d.spending_g == 0) {
+                //     d3.select("div.text").append("p").attr("class", "temporary")
+                //         .html("<span>пісне – <b>немає даних</span></b>");
+                // }
 
 
 /* =========================================
