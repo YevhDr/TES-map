@@ -67,7 +67,7 @@ var getStation = function (stat) {
 //Поставки за останні 30 днів по типам вугілля
                 if (d.last30days_delivery_a > 0 || d.last30days_delivery_g > 0 || d.last30days_delivery_p > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("<b>Поставки за останні 30 днів по типам вугілля:</b>")
+                        .html("<b>Поставки за останні 30 днів:</b>")
                         .style("margin-top", "20px");
                 }
                 if (d.last30days_delivery_a > 0) {
@@ -88,7 +88,7 @@ var getStation = function (stat) {
 //Витрати за останні 30 днів по типам вугілля
                 if (d.last30days_spending_a > 0 || d.last30days_spending_g > 0 || d.last30days_spending_p > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary")
-                        .html("<b>Витрати за останні 30 днів по типам вугілля:</b>")
+                        .html("<b>Витрати за останні 30 днів:</b>")
                         .style("margin-top", "20px");
                 }
                 if (d.last30days_spending_a > 0) {
