@@ -36,9 +36,81 @@ var getStation = function (stat) {
                 d3.select("div.text").append("p").attr("class", "temporary")
                     .html("<b>Власник – </b><span>" + d.owner + "</span>");
 
-/* =======================================
- Максимальне навантаження  ШАПКА
-========================================== */
+
+
+                /* =========================================
+                 Додаткова інформація
+                 ========================================== */
+
+                // Поточні запаси
+                if (d.reserve_a > 0 || d.reserve_g > 0 || d.reserve_p > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<b>Поточні запаси:</b>")
+                        .style("margin-top", "20px");
+                }
+                if (d.reserve_a > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<span>антрацит – <b>" + d.reserve_a + " тис. тонн</span></b>");
+                }
+
+                if (d.reserve_g > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<span>газове – <b>" + d.reserve_g + " тис. тонн</span></b>");
+                }
+
+                if (d.reserve_p > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<span>пісне – <b>" + d.reserve_p + " тис. тонн</span></b>");
+                }
+
+
+//Поставки за останні 30 днів по типам вугілля
+                if (d.last30days_delivery_a > 0 || d.last30days_delivery_g > 0 || d.last30days_delivery_p > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<b>Поставки за останні 30 днів по типам вугілля:</b>")
+                        .style("margin-top", "20px");
+                }
+                if (d.last30days_delivery_a > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<span>антрацит – <b>" + d.last30days_delivery_a + " тис. тонн</span></b>");
+                }
+
+                if (d.last30days_delivery_g > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<span>газове – <b>" + d.last30days_delivery_g + " тис. тонн</span></b>");
+                }
+
+                if (d.last30days_delivery_p > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<span>пісне – <b>" + d.last30days_delivery_p + " тис. тонн</span></b>");
+                }
+
+//Витрати за останні 30 днів по типам вугілля
+                if (d.last30days_spending_a > 0 || d.last30days_spending_g > 0 || d.last30days_spending_p > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<b>Витрати за останні 30 днів по типам вугілля:</b>")
+                        .style("margin-top", "20px");
+                }
+                if (d.last30days_spending_a > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<span>антрацит – <b>" + d.last30days_spending_a + " тис. тонн</span></b>");
+                }
+
+                if (d.last30days_spending_g > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<span>газове – <b>" + d.last30days_spending_g + " тис. тонн</span></b>");
+                }
+
+                if (d.last30days_spending_p > 0) {
+                    d3.select("div.text").append("p").attr("class", "temporary")
+                        .html("<span>пісне – <b>" + d.last30days_spending_p + " тис. тонн</span></b>");
+                }
+
+
+
+                /* =======================================
+                 Максимальне навантаження  ШАПКА
+                ========================================== */
                 if (d.max_a > 0 || d.max_g > 0 || d.max_p > 0) {
                     d3.select("div.text").append("p").attr("class", "temporary m-0 p-0")
                         .html("<b>Максимальне  завантаження складів:</b>")
@@ -168,9 +240,11 @@ var getStation = function (stat) {
                 // }
 
 
-/* =========================================
-position sticky
-========================================== */
+
+
+                /* =========================================
+                position sticky
+                ========================================== */
                 d3.select("div.col-sm-4.col-md-3.col-lg-3.col-xl-2").classed("sticky", true);
             }
 
