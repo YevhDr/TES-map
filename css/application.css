@@ -378,6 +378,9 @@ svg {
       text-align: right;
       width: 90%; } }
 
+.red:hover {
+  color: #faa51b !important; }
+
 h1 {
   color: white;
   font-size: 5em;
