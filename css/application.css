@@ -56,37 +56,19 @@ h3 {
 
 /* ======== Footer ======== */
 #footer {
+  margin-top: 50px !important;
   position: absolute;
-  bottom: 0;
+  bottom: 0 !important;
   width: 100%;
   height: 170px;
-  background: #1c2124 none repeat scroll 0 0;
-  text-align: left;
-  font-size: 14px;
+  background: #e3e3e3 none repeat scroll 0 0;
+  text-align: center;
+  font-size: 9px;
   padding: 0;
   display: block; }
 
 #footer-wraper {
-  padding-top: 20px;
-  margin-left: 5%;
-  margin-left: 5%; }
-
-.links li {
-  color: #fff;
-  font-size: 0.7em; }
-  @media (max-width: 1024px) {
-    .links li {
-      display: none; } }
-
-.copyright {
-  float: left;
-  font-size: 0.7em;
-  color: #fff; }
-  @media (max-width: 1024px) {
-    .copyright {
-      font-size: 0.5em; } }
-  .copyright p {
-    padding-bottom: 0px; }
+  padding-top: 20px; }
 
 .copying-info {
   padding-top: 20px;
@@ -394,6 +376,7 @@ h1 {
 
 h3 {
   color: white;
+  opacity: 0.8;
   margin-top: 0;
   line-height: 1.4em;
   width: 83%; }
@@ -414,7 +397,8 @@ h3 {
 p {
   font-size: 1.5em;
   color: white;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  opacity: 0.8; }
   @media (max-width: 2570px) {
     p {
       font-size: 1.2em; } }
@@ -439,7 +423,8 @@ p span {
   color: #6d6e70; }
 
 tbody {
-  color: white; }
+  color: white;
+  opacity: 0.8; }
 
 .no-bottom-border {
   border-bottom: 0 !important;
@@ -516,6 +501,7 @@ td:nth-child(2) {
 
   #table table {
     color: white;
+    opacity: 0.6;
     font-size: 1.1em;
     width: 75%;
     margin-left: 3%;
@@ -538,6 +524,7 @@ td:nth-child(2) {
 
   h1 {
     color: white;
+    opacity: 0.8;
     margin-top: 0;
     line-height: 1.5em;
     font-weight: bold; }
@@ -586,7 +573,8 @@ td:nth-child(2) {
 thead {
   text-align: center;
   font-size: 1em;
-  color: white; }
+  color: white;
+  opacity: 0.8; }
 
 #table th:nth-child(1) {
   text-align: left !important; }
@@ -663,5 +651,12 @@ tbody {
   @media (max-width: 480px) {
     .annotate {
       margin-left: 2%; } }
+
+.logo_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  align-items: center; }
 
 /*# sourceMappingURL=application.css.map */

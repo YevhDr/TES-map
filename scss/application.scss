@@ -182,6 +182,7 @@ svg {
 
 h3 {
     color: white;
+    opacity: 0.8;
     margin-top: 0;
     line-height: 1.4em;
     width: 83%;
@@ -210,6 +211,7 @@ p {
   font-size: 1.5em;
   color: white;
   line-height: 1.4em;
+  opacity: 0.8;
 
   @media #{$brk-xlarge}{
     font-size: 1.2em;  }
@@ -242,6 +244,7 @@ p span {
 
 tbody {
     color:white;
+    opacity: 0.8;
 }
 
 .no-bottom-border {
@@ -348,6 +351,7 @@ td:nth-child(2) {
 
   #table table {
     color: white;
+    opacity: 0.6;
     font-size: 1.1em;
     width: 75%;
     margin-left: 3%;
@@ -396,6 +400,7 @@ td:nth-child(2) {
 
   h1 {
     color: white;
+    opacity: 0.8;
     margin-top: 0;
     line-height: 1.5em;
     font-weight: bold;
@@ -471,6 +476,7 @@ thead {
   text-align: center;
   font-size: 1em;
   color:white;
+  opacity: 0.8;
 
 }
 
@@ -576,4 +582,16 @@ tbody {
 
   }
 }
+
+
+.logo_flex {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  align-items: center;
+
+}
+
+
 
