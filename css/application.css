@@ -655,4 +655,12 @@ tbody {
 #footer2 {
   background-color: #e3e3e3; }
 
+.logo_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap; }
+
 /*# sourceMappingURL=application.css.map */
