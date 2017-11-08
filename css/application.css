@@ -257,6 +257,10 @@ h3 {
       fill: none;
       stroke: none; }
 
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; }
+
 .logo {
   float: left;
   padding: 1px 19px 0 0;
@@ -273,8 +277,7 @@ h3 {
 body {
   font-family: Open Sans, sans-serif;
   color: #383e47;
-  width: 100%;
-  margin-bottom: 100px; }
+  width: 100%; }
   @media (min-width: 480px) {
     body {
       font-size: 1.6em; } }
@@ -423,8 +426,7 @@ p span {
   color: #6d6e70; }
 
 tbody {
-  color: white;
-  opacity: 0.8; }
+  color: white; }
 
 .no-bottom-border {
   border-bottom: 0 !important;
@@ -501,7 +503,6 @@ td:nth-child(2) {
 
   #table table {
     color: white;
-    opacity: 0.6;
     font-size: 1.1em;
     width: 75%;
     margin-left: 3%;
@@ -573,8 +574,7 @@ td:nth-child(2) {
 thead {
   text-align: center;
   font-size: 1em;
-  color: white;
-  opacity: 0.8; }
+  color: white; }
 
 #table th:nth-child(1) {
   text-align: left !important; }
@@ -652,12 +652,7 @@ tbody {
     .annotate {
       margin-left: 2%; } }
 
-.logo_flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  align-items: center;
-  flex-wrap: wrap; }
+#footer2 {
+  background-color: #e3e3e3; }
 
 /*# sourceMappingURL=application.css.map */
