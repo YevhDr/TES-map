@@ -155,7 +155,7 @@
             <!--<div id="table"></div>-->
             <div class="chart-example" id="table"></div>
 
-            <p class="click" style="margin-bottom:50px;"><i>Дані: Міненерговугілля ( <a class = "red" style="color:red; border-bottom: 0.5px dashed" href = "coal_output/coal_reserves_stations.csv" download> завантажити</a> )</i></p>
+            <p class="click" style="margin-bottom:50px;"><i>Дані: Міненерговугілля ( <a class = "red" style="color:red; border-bottom: 0.5px dashed" href = "coal_output/coal_reserves_stations.csv" download> завантажити csv</a> )</i></p>
 
 
         </div>
@@ -164,11 +164,28 @@
     </div>
 </div>
 </body>
-<footer id="footer" class="container-fluid">
 
-    <div class="row" style="margin-top: 20px;margin-bottom: 10px;">
+<script src="js/getStation_new.js"></script>
+<!--<script src="js/getStation.js"></script>-->
+<script src="js/leaf-demo.js"></script>
+<!--<script src="js/table.js"></script>-->
+<!--<script src="js/sparklines.js"></script>-->
+
+
+<!--COAL NEW-->
+<script src="js/table(coal_new).js"></script>
+<script src="js/spark(coal_new).js"></script>
+
+
+<script src="js/annotation/spark_annotation.js"></script>
+<script src="js/annotation/table_annotation.js"></script>
+<!--<script src="js/changeClassName.js"></script>-->
+
+<footer id="footer" class="container">
+
+    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
         <div class="col-md-offset-1 col-sm-10">
-        <p  style="text-align: center!important;  color:#1c2124 !important;">Цей проект було втілено за сприяння Державного агентства з питань електронного урядування України в рамках проекту USAID/UK aid та Фонду Євразія «Прозорість та підзвітність у державному управлінні та послугах» у партнерстві з TEXTY.org.ua, а також проекту USAID «Прозора енергетика», який реалізує Dixi Group.</p>
+            <p  style="text-align: center!important;  color:#1c2124 !important;"><i>Цей проект було втілено за сприяння Державного агентства з питань електронного урядування України в рамках проекту USAID/UK aid та Фонду Євразія «Прозорість та підзвітність у державному управлінні та послугах» у партнерстві з TEXTY.org.ua, а також проекту USAID «Прозора енергетика», який реалізує Dixi Group.</i></p>
         </div>
     </div>
         <!--<div class="col-sm-12">-->
@@ -176,29 +193,31 @@
 
         <!--</div>-->
     <div class="row logo_flex">
-        <div>
-            <img src="img/usaid_logo.png" style="height: 50px;" >
+        <div class="col-sm-10">
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-1">
+            <img class="img-responsive hidden-xs" src="img/usaid_logo.png" style="width: 80%" >
 
         </div>
-        <div>
-            <img src="img/UKaid_logo.png" style="height: 80px;" >
+        <div  class="col-sm-2 col-md-2 col-lg-2 col-xl-1">
+            <img class="img-responsive hidden-xs" src="img/uk-aid-logo-2.png" style="width: 80%">
 
         </div>
-        <div>
-            <img src="img/ef_logo.png" style="height: 60px;" >
+        <div  class="col-sm-2 col-md-2 col-lg-2 col-xl-1">
+            <img class="img-responsive hidden-xs" src="img/ef_logo.png" >
 
         </div>
-        <div>
-            <img src="img/texty_logo.png" style="height: 40px;" >
+        <div  class="col-sm-2 col-md-2 col-lg-2 col-xl-1">
+            <img class="img-responsive hidden-xs" src="img/texty_logo.png" style="width: 90%" >
 
         </div>
-        <div>
-            <img src="img/egov_logo.png" style="height: 80px;" >
+        <div class="col-sm-2  col-md-2 col-lg-2 col-xl-1">
+            <img class="img-responsive hidden-xs" src="img/egov_logo.png" >
 
         </div>
-        <div>
-            <img src="img/dixi-logo-01.png" style="height: 50px;" >
+        <div  class="col-sm-2 col-md-2 col-lg-2 col-xl-1">
+            <img class="img-responsive hidden-xs" src="img/dixi-logo-01.png"  >
 
+        </div>
         </div>
 
     </div>
@@ -219,21 +238,6 @@
     })();
 </script>
 
-<script src="js/getStation_new.js"></script>
-<!--<script src="js/getStation.js"></script>-->
-<script src="js/leaf-demo.js"></script>
-<!--<script src="js/table.js"></script>-->
-<!--<script src="js/sparklines.js"></script>-->
-
-
-<!--COAL NEW-->
-<script src="js/table(coal_new).js"></script>
-<script src="js/spark(coal_new).js"></script>
-
-
-<script src="js/annotation/spark_annotation.js"></script>
-<script src="js/annotation/table_annotation.js"></script>
-<!--<script src="js/changeClassName.js"></script>-->
 
 
 </html>
