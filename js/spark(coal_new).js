@@ -51,7 +51,7 @@ var spark = function () {
             data = data.sort(sortByDateAscending);
 
 
-            // data = data.slice(Math.max(data.length - 100, 1));
+            data = data.slice(Math.max(data.length - 100, 1));
 
 
             var x = d3.scale.linear().range([0, width]);
