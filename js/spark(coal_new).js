@@ -32,14 +32,7 @@ var spark = function () {
              });
 
 
-            // data.forEach(function (d) {
-            //     d.forEach(function (m) {
-            //         m.date = parseDate(m.date);
-            //         m.plan_percent = +m.plan_percent;
-            //     });
-            // });
-
-            var xAxis = d3.svg.axis().scale(x)
+             var xAxis = d3.svg.axis().scale(x)
                 .orient("bottom").ticks(9);
 
             //time to chronological order
@@ -66,9 +59,11 @@ var spark = function () {
                     return y(d.plan_percent);
                 });
 
-            x.domain(d3.extent(data, function (d) {
-                return d.date;
-            }));
+            var firstdate  = d3.time.day.offset(data[data.length-1].date, - 100);
+            var lastdate  = data[data.length-1].date;
+
+            x.domain([firstdate, lastdate]);
+
             y.domain([-0.1, d3.max(data, function (d) {
                 return d.plan_percent;
             })]);
