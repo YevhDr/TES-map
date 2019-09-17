@@ -76,7 +76,7 @@ var annotation = function () {
                 .attr("text-anchor", "start")
                 .style("fill", "grey")
                 .text(function (d) {
-                    return d.coal_type + ", " + plan_percent + "%"
+                    return "тип вугілля (антрацит чи газове), "
                 })
                 .style("font-size", "1em")
                 .style("padding-top", "5px")
@@ -88,7 +88,7 @@ var annotation = function () {
                 .attr("dy", "2.5em")
                 .attr("text-anchor", "start")
                 .style("fill", "grey")
-                .text("(поточне виконанння плану)")
+                .text("поточне виконанння плану, %")
                 .style("font-size", "1em")
                 .style("width", width);
 
